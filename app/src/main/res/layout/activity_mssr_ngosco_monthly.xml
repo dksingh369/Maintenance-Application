@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mssr_ngosco_monthly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Airports Authority Of India"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="120dp"
+                        android:layout_height="91dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/logoaai" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="CNS Vol VII Part 3"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Preventive Monthly Maintenance schedule"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Name:"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Desig:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:text="Emp No:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Location:"
+                android:textStyle="bold" />
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="MAKE: NGOSCO   EQPT: MODE S"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text="MONTH"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:ems="8"
+                    android:hint="Enter month "
+                    android:textColorHint="#757575" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="TASKS TO BE PERFORMED "
+                    android:textAlignment="viewStart"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="MEASURED STATUS"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:text="1 POWER SUPPLY DC OUTPUT VOLTAGE"/>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="20sp"
+                    android:text="INT 1" />
+
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="20sp"
+                    android:text="INT 2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="1.A INTERROGATOR"
+                android:textSize="20sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="PS1 (+15V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="PS2 (-15V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="PS3 (+5V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="PS4 (+36V ± O.7V)"/>
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="PS5 (+52V ± 2.0V)"/>
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:text="1.B DPS"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="V1 (+5V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="V2 (+15V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="V3 (-15V ± 0.1V)"/>
+
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:text="1.C PCU VOLTAGE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="i) TP1 (0V)"/>
+
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="ii) TP2 (0V)"/>
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="iii) TP3 (0V)"/>
+
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="iv) TP4 (0V)"/>
+
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="v) TP5 (+24V)"/>
+
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="vi) TP6 (+24V)"/>
+
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="vii) TP7 (1.4V)"/>
+
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="2 PERFORM LAMP TEST"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="i) INTERROGATOR"/>
+
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="ii) PCU"/>
+
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="3 PERFORM CIRCUIT BREAKER TEST ALARM"/>
+
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="4 PERFORM GENERAL INSPECTION AND CLEANINGN OF CABINET"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="i) INTERROGATOR"/>
+
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="ii) DPS"/>
+
+                <EditText
+                    android:id="@+id/editText27"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="iii) PCU"/>
+
+                <EditText
+                    android:id="@+id/editText28"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="5 CLEAN AND REPLACE AIR FILTERS"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="i) INTERROGATOR"/>
+
+                <EditText
+                    android:id="@+id/editText29"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="ii) PCU"/>
+
+                <EditText
+                    android:id="@+id/editText30"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="Enter" />
+
+            </LinearLayout>
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText31"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:scrollbars="vertical"
+                android:focusable="true"
+                android:gravity="top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:hint="Write Remarks here(If any)" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="Sign" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_span="2"
+                    android:text="submit" />
+            </TableRow>
+            <TextView
+                android:id="@+id/textViewWatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Form Created by - T Karthik Kumar"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textColor="@color/teal_700" />
+
+
+
+
+
+
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mssr_ngosco_weekly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Airports Authority Of India"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="120dp"
+                        android:layout_height="91dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/logoaai" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="CNS Vol VII Part 3"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_horizontal"
+                android:text="Preventive Weekly Maintenance schedule"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="20dp"
+                android:text="Name:"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="20dp"
+                android:text="Desig:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Emp No:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="20dp"
+                android:text="Location:"
+                android:textStyle="bold" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:weightSum="1">
+
+                <!--- <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     android:layout_span="3"
+                     android:weightSum="3"
+                     android:layout_weight="1">
+
+
+                 </LinearLayout> -->
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="MAKE: NGOSCO"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text="Month:"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:ems="8"
+                    android:hint="Enter Month" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Parameters to be Checked"
+                    android:textAlignment="viewStart"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:text="Normal Status" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="1  GENERAL"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="1.1 Eqpt Shelter Cleanliness"
+                    android:textOff="Dust Free"
+                    android:textOn="Dusty" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="1.2 Room Temperature" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="18 - 22" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="1.3 Eqpt shelter illumination"
+                    android:textOff="Satisfactory"
+                    android:textOn="Not Satisfactory" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="1.4 Status of A/C"
+                    android:textOff="Satisfactory"
+                    android:textOn="Not Satisfactory"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="1.5 Status of fire extinguisher"
+                    android:layout_marginStart="20dp"
+                    android:textOff="serviceable"
+                    android:textOn="NOT serviceable" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="1.6 Unusual sound/smell"
+                    android:textOff="NO"
+                    android:textOn="YES" />
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:text="2.1 EQUIPMENT INDR01"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.1 Eqpt Status"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.2 Error/Event log file" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Nothing Unusual" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.3 Disk Usage % (DIA0/DIA1)" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="&lt;70%" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.1.4 Alarm Status"
+                    android:textOff="NO alarm"
+                    android:textOn="alarm" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.5 Deleting old data files" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Done" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.1.6 RDP Personility"
+                    android:textOff="master"
+                    android:textOn="Alternate" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.7 Lan Communication"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.1.8 Date/Time checking"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_marginStart="20dp"
+                        android:text="2.1.9 Any abnormality reported by Radar controller" />
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:inputType="textMultiLine"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:hint="NO" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:text="2.2 EQUIPMENT INDR02"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.1 Eqpt Status"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.2 Error/Event log file" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Nothing Unusual" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.3 Disk Usage % (DIA0/DIA1)" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="&lt;70%" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.2.4 Alarm Status"
+                    android:textOff="NO alarm"
+                    android:textOn="alarm" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.5 Deleting old data files" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Done" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.2.6 RDP Personility"
+                    android:textOff="master"
+                    android:textOn="Alternate" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.7 Lan Communication"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.2.8 Date/Time checking"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_marginStart="20dp"
+                        android:text="2.2.9 Any abnormality reported by Radar controller" />
+
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:inputType="textMultiLine"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:hint="NO" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:text="2.3 EQUIPMENT INDX01"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.1 Eqpt Status"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.2 Error/Event log file" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Nothing Unusual" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.3 Disk Usage % (DIA0/DIA1)" />
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="&lt;80%" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.3.4 Alarm Status"
+                    android:textOff="NO alarm"
+                    android:textOn="alarm" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.5 Deleting old data files" />
+
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Done" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.3.6 RCW Personility"
+                    android:textOff="SC01"
+                    android:textOn="SC02" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.7 Lan Communication"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.3.8 Date/Time checking"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_marginStart="20dp"
+                        android:text="2.3.9 Any abnormality reported by Radar controller" />
+
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:inputType="textMultiLine"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:hint="NO" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:text="2.4 EQUIPMENT INDX02"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.1 Eqpt Status"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.2 Error/Event log file" />
+
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Nothing Unusual" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.3 Disk Usage % (DIA0/DIA1)" />
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="&lt;80%" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.4.4 Alarm Status"
+                    android:textOff="NO alarm"
+                    android:textOn="alarm" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.5 Deleting old data files" />
+
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:hint="Done" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:text="2.4.6 RCW Personility"
+                    android:textOff="SC01"
+                    android:textOn="SC02" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.7 Lan Communication"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+                    android:layout_marginStart="20dp"
+                    android:text="2.4.8 Date/Time checking"
+                    android:textOff="Ok"
+                    android:textOn="Not ok" />
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_marginStart="20dp"
+                        android:text="2.4.9 Any abnormality reported by Radar controller" />
+
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:inputType="textMultiLine"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:hint="NO" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <Switch
+                    android:id="@+id/switch26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:splitTrack="true"
+
+                    android:text="3 Deviation from Normal Status/Reading Noticed"
+                    android:textOff="NO"
+                    android:textSize="20sp"
+                    android:textOn="Yes" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1">
+
+
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:gravity="top"
+                    android:hint="Details of deviations/actions taken "
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:weightSum="1">
+
+
+
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:focusable="true"
+                    android:gravity="top"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:hint="Write Remarks here(If any)" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="Sign" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_span="2"
+                    android:text="submit" />
+            </TableRow>
+            <TextView
+                android:id="@+id/textViewWatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Form Created by - T Karthik Kumar"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textColor="@color/teal_700" />
+
+
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

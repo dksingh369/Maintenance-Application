@@ -46,9 +46,8 @@ public class SurMssrNgoscoActivity extends AppCompatActivity {
     }
 
     public void weeklyClicked (View view){
-        // Launch the DVR Equipment Room Activity
-       // Intent intent = new Intent(getApplicationContext(),ADSBDailyActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),mssr_ngosco_weekly.class);
+        startActivity(intent);
 
 
     }
@@ -61,11 +60,9 @@ public class SurMssrNgoscoActivity extends AppCompatActivity {
     }
 
     public void monthlyClicked (View view){
-        // Launch the VCS Equipment Room Activity
+        Intent intent = new Intent(getApplicationContext(),mssr_ngosco_monthly.class);
+        startActivity(intent);
 
-        Log.i("Monthly ", "Clicked");
-        //Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
-        //startActivity(intent);
 
     }
 
