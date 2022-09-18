@@ -69,7 +69,9 @@ public class NavAidsActivity extends AppCompatActivity {
     }
 
     public void ndbClicked (View view){
-        // Launch the RCAG Equipment Room Activity
+
+        Intent intent = new Intent(getApplicationContext(),NDBSAC100.class);
+        startActivity(intent);
 
 
 
@@ -78,7 +80,8 @@ public class NavAidsActivity extends AppCompatActivity {
     public void locatorClicked (View view){
         // Launch the UAH Equipment Room Activity
 
-
+        Intent intent = new Intent(getApplicationContext(),NDBSAC100.class);
+        startActivity(intent);
 
     }
 

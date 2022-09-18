@@ -1,0 +1,2489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavAidsDMEMaru310and320DailyActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:onClick="click"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="AIRPORTS AUTHORITY OF INDIA"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="CNS MANUAL VOL.VII Part 2"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Name: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+                <TextView
+                    android:id="@+id/textViewD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_marginTop="2dp"
+                    android:text="Desig: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+                <TextView
+                    android:id="@+id/textViewE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginTop="2dp"
+                    android:text="Emp No.: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+
+                <TextView
+                    android:id="@+id/textViewL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView118"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:text="Location: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="PREVENTIVE MAINTENANCE SCHEDULE – DAILY"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3.6">
+
+
+                <TextView
+                    android:id="@+id/textViews4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:text="Station      :" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".8"
+                    android:ems="5"
+                    android:hint="Station"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViews4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:text="Region      :" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".8"
+                    android:ems="5"
+                    android:hint="Region"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Equipment Name : DME                      Make &amp; Model : MARU - 310/320"
+                    android:textColor="@color/textViewColor"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4.9">
+
+
+                <TextView
+                    android:id="@+id/textViews4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:text="Frequency / CH. NO.     :"
+                    android:textColor="@color/textViewColor" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:text="Ident      :"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textViewColor" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Date        :"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight=".4" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="textEnd" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:text="S.No."
+                    android:textSize="16sp"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:layout_weight="1.6"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Parameters to be Checked" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="212dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:layout_weight="1.2"
+                    android:textSize="16sp"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:text="Measured Status" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.0"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="1.7"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.9"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.10"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="GENERAL"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Equipment Shelter Cleanliness"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Status of Air Conditioners"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Equipment Shelter Condition"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="a) Temperature"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="b) Humidity"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Mains Power Supply"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="a) Voltage"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="b) Frequency"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="UPS Output"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Status of Monitor"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:gravity="center_vertical"
+                        android:text="Status of DME Remote indications at   :   "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="a) Equipment Room"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center_vertical"
+                        android:text="b) A.T.C."
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Transponder on air"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Any Unusual noise "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Status of Mast Light"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="212dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textColor="@color/textViewColor"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Dust Free"
+                            android:textOff="Un-Satisfactory"
+                            android:text="Un-Satisfactory"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/textViewColor"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="Satisfactory"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Serviceable"
+                            android:textOff="Un-Serviceable"
+                            android:text="Un-Serviceable"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/textViewColor"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="Serviceable"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="22° ± 4°C"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt; 70%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="230V  &#xB1; 10%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="50 Hz ± 2.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="230V  &#xB1; 5V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Ok"
+                            android:textOff="Not Ok"
+                            android:text="Not Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Ok"
+                            android:textOff="Not Ok"
+                            android:text="Not Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Ok"
+                            android:textOff="Not Ok"
+                            android:text="Not Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Tx - II"
+                            android:textOff="Tx - I"
+                            android:text="Tx - I"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/textViewColor"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView1211"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="Tx - II"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes"
+                            android:textOn="No"
+                            android:textOff="Yes"
+                            android:textColor="@color/textViewColor"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="No"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Ok"
+                            android:textOff="Not Ok"
+                            android:text="Not Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ok"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.0"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="2.7"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.0"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="3.7"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.0"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="4.7"
+                        android:textColor="@color/textViewColor" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text=" Monitoring (Using PMDT) - Transponder #1"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Time Delay"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Reply Efficiency"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Transmission rate "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Pulse spacing "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Peak Power Output"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Antenna VSWR"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Effective Radiated Power"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident code"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitoring (Using PMDT) -Transponder #2"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Time Delay"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Reply Efficiency"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Transmission rate "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Pulse spacing "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Peak Power Output"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Antenna VSWR"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Effective Radiated Power"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident code"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Modules Status Indications "
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Fault Indications on HPA"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Fault Indications on TXU"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="AC/DC"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="DC/DC"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Battery (Charging/ Discharging)"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="TXP Fault"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor Fault"
+                        android:textColor="@color/textViewColor" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="MON - I"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="50 ± 0.5 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">70%"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">700 pppm"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.25 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.5"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="MON - I"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/editText26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="50 ± 0.5 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">70%"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">700 pppm"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.25 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last calibration flight check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.5"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Normal"
+                            android:textOff="Abnormal"
+                            android:text="Abnormal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Normal"
+                            android:textOff="Abnormal"
+                            android:text="Abnormal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Charging"
+                            android:textOff="Discharging"
+                            android:text="Discharging"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Charging"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="MON - II"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="50 ± 0.5 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">70%"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText20"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">700 pppm"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.25 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.5"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="MON - II"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/editText34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="50 ± 0.5 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">70%"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=">700 pppm"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.25 μsec"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText39"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.5"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+                    <EditText
+                        android:id="@+id/editText40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="As set at last flight calibration check"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Normal"
+                            android:textOff="Abnormal"
+                            android:text="Abnormal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Normal"
+                            android:textOff="Abnormal"
+                            android:text="Abnormal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Charging"
+                            android:textOff="Discharging"
+                            android:text="Discharging"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Charging"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:textAlignment="center"
+                        android:weightSum="2"
+                        tools:ignore="RtlCompat">
+
+
+                        <Switch
+                            android:id="@+id/switch22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOn="Off"
+                            android:textOff="On"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Remarks : "
+                    android:textColor="@color/textViewColor"
+                    android:layout_weight=".7" />
+
+                <EditText
+                    android:id="@+id/editText42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textViewWatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Form Created by - Akshay Bele"
+                android:textAlignment="center"
+                android:textStyle="italic|bold"
+                android:textColor="@color/teal_700" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

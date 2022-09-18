@@ -51,18 +51,19 @@
 
             <EditText
                 android:id="@+id/passwordEditText"
-                android:hint="Enter Your Password..."
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/usernameEditText"/>
+                android:layout_below="@+id/usernameEditText"
+                android:hint="Enter Your Password..."
+                android:inputType="textPassword" />
 
             <LinearLayout
                 android:id="@+id/linearLay1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/passwordEditText"
+                android:layout_below="@+id/textViewReply"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -171,6 +172,13 @@
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/textView"/>
 
+            <TextView
+                android:id="@+id/textViewReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordEditText"
+                android:textColor="?attr/colorError"
+                android:textSize="20sp" />
 
 
         </RelativeLayout>

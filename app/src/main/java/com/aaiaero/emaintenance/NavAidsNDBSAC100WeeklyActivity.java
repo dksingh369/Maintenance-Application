@@ -37,28 +37,21 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
+public class NavAidsNDBSAC100WeeklyActivity extends AppCompatActivity {
 
     private MyFunctions myFunctions = new MyFunctions(this);//--1--//Add this
     private MySignature mySignature = new MySignature(this);
     private int selectedID;//Copy
     private String selectedName;//Copy
     private EditText[] editTextArray;//Copy
-    private Switch[] switchArray;//Copy
+    private Switch[] switchArray= {};//Copy
     private Spinner[] spinnerArray = {};//Copy
 
     public  String Date;
 
-    private String thisActivityName = "NavAidsNDBSAC100MonthlyActivity"; //Change Here as per your class name
+    private String thisActivityName = "NavAidsNDBSAC100WeeklyActivity"; //Change Here as per your class name
 
-    public void click(View view) {
-
-        closeKeyBoard();
-
-    }
-
-
-    public void closeKeyBoard() {
+    public void click(View view1) {
         View view = this.getCurrentFocus();
         if (view != null) {
             InputMethodManager imm = (InputMethodManager)
@@ -67,44 +60,24 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
         }
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav_aids_ndbsac100_monthly);
+        setContentView(R.layout.activity_nav_aids_ndbsac100_weekly);
 
-        EditText editText1,editText2,editText3,editText4,editText5,editText6,editText7,editText8,editText9,editText10,editText11,editText12,editText13,
-                editText14,editText15,editText16,editText17,editText18,editText19,editText20,editText21,editText22;
+        EditText editText1,editText2,editText3,editText4,editText5,editText6, editText7,editText8,
+                editText9,editText10,editText11,editText12, editText13,editText14,editText15,
+                editText16, editText17,editText18;
+
 
         editTextArray =  new EditText[] { editText1 = (EditText) findViewById(R.id.editText1),
                 editText2 = (EditText) findViewById(R.id.editText2),
                 editText3 = (EditText) findViewById(R.id.editText3),
                 editText4 = (EditText) findViewById(R.id.editText4),
                 editText5 = (EditText) findViewById(R.id.editText5),
-                editText6 = (EditText) findViewById(R.id.editText6),
-                editText7 = (EditText) findViewById(R.id.editText7),
-                editText8 = (EditText) findViewById(R.id.editText8),
-                editText9 = (EditText) findViewById(R.id.editText9),
-                editText10 = (EditText) findViewById(R.id.editText10),
-                editText11 = (EditText) findViewById(R.id.editText11),
-                editText12 = (EditText) findViewById(R.id.editText12),
-                editText13 = (EditText) findViewById(R.id.editText13),
-                editText14 = (EditText) findViewById(R.id.editText14),
-                editText15 = (EditText) findViewById(R.id.editText15),
-                editText16 = (EditText) findViewById(R.id.editText16),
-                editText17 = (EditText) findViewById(R.id.editText17),
-                editText18 = (EditText) findViewById(R.id.editText18),
-                editText19 = (EditText) findViewById(R.id.editText19),
-                editText20 = (EditText) findViewById(R.id.editText20),
-                editText21 = (EditText) findViewById(R.id.editText21),
-                editText22 = (EditText) findViewById(R.id.editText22)};
+                editText6 = (EditText) findViewById(R.id.editText6)};
 
-
-        Switch switch1, switch2;
-
-        switchArray = new Switch[]{
-
-                switch1 = (Switch) findViewById(R.id.switch1),
-                switch2 = (Switch) findViewById(R.id.switch2)};
 
         TextView textViewN = (TextView) findViewById(R.id.textViewN);
         textViewN.setText("Name: " + PersonalDetailsActivity.naam);
@@ -194,7 +167,7 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
 
         // Change below as per requirement-----------------------------------------------------------
         // crate a page description
-        PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(723, 1023, 1).create();
+        PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(1270, 1795, 1).create();
 
         // start a page
         PdfDocument.Page myPage1 = myPdfdocument.startPage(myPageInfo1);
@@ -205,13 +178,13 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
 
 
 //--------------------------------------------------------------------------------------------
-        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.dvorgcel755daily1);
-        scaledbmp = Bitmap.createScaledBitmap(bmp, 723, 1023, false);
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.ndbsac100weekly);
+        scaledbmp = Bitmap.createScaledBitmap(bmp, 1270,1795, false);
 //--------------------------------------------------------------------------------------------
         canvas.drawBitmap(scaledbmp, 0, 0, paint);
 
 
-        titlePaint.setTextSize(13);
+        titlePaint.setTextSize(20);
         paint.setTextAlign(Paint.Align.LEFT);
         //canvas.drawText("Name: " + PersonalDetailsActivity.naam ,1500,32,titlePaint);
         //canvas.drawText("Desig: " + PersonalDetailsActivity.design ,1500,64,titlePaint);
@@ -222,27 +195,18 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
         //--------------------------------Change as per your requirement------------------------------------------------------
 
         //canvas.drawBitmap(PersonalDetailsActivity.sigNature, 1325, 2720, paint);
-        titlePaint.setTextSize(13);
+        titlePaint.setTextSize(20);
 
-        int[] editTextXPixel1 = {207, 368,535,535,535};
-        int[] editTextYPixel1 = {174, 174, 372,419,450};
-
-        int[] switchXPixel1 = {530,530,530,530,530,530,530,530,530,530,530,530,530,530,530};
-        int[] switchYPixel1 = {290,320,352,393,477,507,538,564,591,622,650,678,704,730,749};
+        int[] editTextXPixel1 = {515,825,825,825,825,90};
+        int[] editTextYPixel1 = {318,461,540,637,765,904};
 
 
-        // Change till here as per requirements ----------------------------------------------------
-
-        //Fixed for all activity--------------------------------------------------------------------
 
         for (int i = 0; i < editTextXPixel1.length; i++) {
             canvas.drawText(editTextDataForPDF[i], editTextXPixel1[i], editTextYPixel1[i], titlePaint);
         }
 
 
-        for (int i = 0; i < switchXPixel1.length; i++) {
-            canvas.drawText(switchDataForPDF[i], switchXPixel1[i], switchYPixel1[i], titlePaint);
-        }
 
 
         Calendar calendar = Calendar.getInstance();
@@ -252,48 +216,14 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
-        titlePaint.setTextSize(13);
+        titlePaint.setTextSize(20);
 
-        canvas.drawText(Date, 493, 174, titlePaint);//Printing Date on PDF
+        canvas.drawText(Date, 135, 343, titlePaint);//Printing Date on PDF
+
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,350,360, false), 706, 1010, paint);
 
         myPdfdocument.finishPage(myPage1);
 
-
-        PdfDocument.PageInfo myPageInfo2 = new PdfDocument.PageInfo.Builder(723, 1023, 2).create();
-
-        // start a page
-        PdfDocument.Page myPage2 = myPdfdocument.startPage(myPageInfo2);
-
-        canvas = myPage2.getCanvas();
-        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.dvorgcel755daily2);
-        scaledbmp = Bitmap.createScaledBitmap(bmp, 723, 1023, false);
-        canvas.drawBitmap(scaledbmp, 0, 0, paint);
-
-        titlePaint.setTextSize(13);  //Change here
-        paint.setTextAlign(Paint.Align.LEFT);
-
-        int[] editTextXPixel2 = {530, 530, 70};
-        int[] editTextYPixel2 = {234, 260, 531};
-
-        int[] switchXPixel2 = {525,525,525,525,525,525};
-        int[] switchYPixel2 = {315,343,371,400,427,452};
-
-
-        // Change till here as per requirements ----------------------------------------------------
-
-        //Fixed for all activity--------------------------------------------------------------------
-
-        for (int i = 0; i < editTextXPixel2.length; i++) {
-            canvas.drawText(editTextDataForPDF[i + editTextXPixel1.length], editTextXPixel2[i], editTextYPixel2[i], titlePaint);
-        }
-
-        for (int i = 0; i < switchXPixel2.length; i++) {
-            canvas.drawText(switchDataForPDF[i+switchXPixel1.length], switchXPixel2[i], switchYPixel2[i], titlePaint);
-        }
-
-
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 315, 780, paint);
-        myPdfdocument.finishPage(myPage2);
 
 
         ActivityCompat.requestPermissions(this, new String[]{
@@ -301,14 +231,14 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
         //----------------------Change-----------------------------------------------------------------------------
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/NDB/SAC - 100/Monthly/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/NDB/SAC - 100/Weekly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "NDB_SAC_100_Monthly_" + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "NDB_SAC_100_Weekly_" + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -324,19 +254,19 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
 
-       /* myFunctions.saveToParse(targetPdf, fileName, "NDB_SAC_100", "Monthly", outputEditText, specificCode);// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName, "NDB_SAC_100", "Weekly", outputEditText, MyFunctions.specificCode("w"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
 
 
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Monthly Maintenance of NDB SAC 100 done.",//Change Here-----------------------------
+                "Weekly Maintenance of NDB SAC 100 done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
         //---------------------------------------------------------------------------------------------------------
 
 
-        myFunctions.toLogoutActivity();*/
+        myFunctions.toLogoutActivity();
     }
 
     @Override
@@ -410,6 +340,5 @@ public class NavAidsNDBSAC100MonthlyActivity extends AppCompatActivity {
             default:
                 return false;
         }
-
     }
 }

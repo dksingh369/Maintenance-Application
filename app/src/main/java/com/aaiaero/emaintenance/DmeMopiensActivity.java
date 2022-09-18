@@ -34,7 +34,7 @@ public class DmeMopiensActivity extends AppCompatActivity {
 
     public void dailyClicked (View view){
 
-        Intent intent = new Intent(getApplicationContext(), NavAidsDMEThales415and435DailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(), NavAidsDMEMaru310and320DailyActivity.class);
         startActivity(intent);
 
 
@@ -71,14 +71,14 @@ public class DmeMopiensActivity extends AppCompatActivity {
 
     public void halfYearlyClicked (View view){
 
-        Intent intent = new Intent(getApplicationContext(), NavAidsDMEThales415and435SixMonthlyActivity.class);
+        Intent intent = new Intent(getApplicationContext(), NavAidsDMEMaru310and320SixMonthlyActivity.class);
         startActivity(intent);
 
     }
 
     public void yearlyClicked (View view){
 
-        Intent intent = new Intent(getApplicationContext(), NavAidsDMEThales415and435AnnualActivity.class);
+        Intent intent = new Intent(getApplicationContext(), NavAidsDMEMaru310and320AnnualActivity.class);
         startActivity(intent);
 
 

@@ -1,0 +1,4487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavAidsDVORASII1150WeeklyActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:onClick="click"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="AIRPORTS AUTHORITY OF INDIA"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="CNS MANUAL VOL.VII Part 2"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Name: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+                <TextView
+                    android:id="@+id/textViewD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_marginTop="2dp"
+                    android:text="Desig: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+                <TextView
+                    android:id="@+id/textViewE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginTop="2dp"
+                    android:text="Emp No.: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+
+                <TextView
+                    android:id="@+id/textViewL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView118"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:text="Location: "
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="MAINTENANCE SCHEDULE – WEEKLY"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+
+                <TextView
+                    android:id="@+id/textViews4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:text="Station      :"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".8"
+                    android:ems="5"
+                    android:hint="Station"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:text="Region      :"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".8"
+                    android:ems="5"
+                    android:hint="Region"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Date        :"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Equipment Name : DVOR"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Make : ASII"
+                    android:textAlignment="center"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Model : 1150"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="1.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="2.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.7"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.9"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.10"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.11"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.12"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.13"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.14"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.15"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.16"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.17"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="3.18"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="4.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.7"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="5.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="6.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="6.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="6.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="6.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="6.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="7.7"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="8.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.0"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.7"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.9"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.10"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.11"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="10.12"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.a.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.b.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="11.c.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="DVOR Power Supply (PS)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="PS 5V"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="PS 12V"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="PS -12V"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="PS 28V"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="PS 48V"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Temperature"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Outside Temperature"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Tx I Temperature"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Tx II Temperature"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Out Temp Enabled"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView322"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Alarm limits"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Az Angle Alarm"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Az Angle Pre-alarm Low"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Az Angle Pre-alarm High"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Mod Alarm\n(ICAO 3.3.5.2)"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Mod Pre-alarm Low"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Mod Pre-alarm High"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Mod Alarm"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Mod Pre-alarm Low "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Mod Pre-alarm high "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Deviation ratio"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Deviation Alarm Low "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Deviation Pre-alarm High"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="RF Level Alarm Low"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="RF level Pre-alarm Low"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="RF Level Pre-alarm High"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband VSWR Tolerance "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident Monitoring"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Nominal Azimuth Angle"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Offsets and scale Factors"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth Angle offset "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation scale "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Modulation Scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Deviation Scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="RF Level offset "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Certification Limits "
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth angle Limit Low "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth angle Limit High "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation limit Lo"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation Limit Hi"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 hz Modulation Limit Lo"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Modulation Limit Hi"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Deviation Limit Low "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Deviation Limit High"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Certification offsets and Scale Factors "
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth Angle offset "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Modulation scale "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView69"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Deviation scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Test Generator configuration"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth angle"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident configuration"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Audio Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Audio frequency"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Nominal Monitor Values"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth angle"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="30 Hz Modulation "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="9960 Hz Deviation "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView83"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="RF Level"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView84"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Notch Monitor configuration"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Nominal configuration"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView86"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth Angle"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Carrier power"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Voice Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView89"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident Modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Reference modulation"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="SBO RF Level"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Offsets and scale factor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView93"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Azimuth angle offset"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView94"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Output power scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Voice modulation scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView96"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Ident Modulation scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView97"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Reference Modulation scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView98"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 1-2 phase offset"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 3-4 phase offset"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Carrier SB Phase offset"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 1 RF scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView102"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 2 RF scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 3 RF scale"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView104"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband 4 RF scale"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView105"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Transmitter Data"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView106"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Carrier power"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView107"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #1"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView108"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #2"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView109"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #3"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView110"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #4"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="VSWR"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Carrier power"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #1"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView114"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #2"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView115"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #3"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView116"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband #4"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView117"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Frequency"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+                    <TextView
+                        android:id="@+id/textView118"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="AM"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView119"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="FM"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView120"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Sideband Frequency "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView121"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Carrier Frequency"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView122"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Lower Side band"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView123"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Upper Sideband"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="TX - I"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="5 ± 0.25V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.50V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-12 ± 0.50V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28 ± 1V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="42 - 48.1V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-25 to 70°C"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 to 40ºC "
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 to 40ºC"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="False"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal ± 1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="113.20°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.80º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30 ± 2%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.20%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="31.8 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30 ± 2%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.2 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="31.8 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.0 ± 1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="15.2 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.8 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 ± 3.0 dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-2.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="1.20:1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Enabled"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="------ Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText57"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-0.56º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText58"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="85.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText59"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="98.7%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText60"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="102.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText61"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText67"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal -1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText68"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal +1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText69"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText70"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="32.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText71"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText72"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="32.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText73"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="15.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText74"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="17.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText83"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-0.56º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText84"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="85.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText85"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="98.7%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText86"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="102.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText91"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.00 Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText92"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText93"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText94"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText95"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Normal"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText96"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText97"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText105"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.00 Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText106"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText107"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText108"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText109"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText110"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="enabled"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="TX - I"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText117"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.00º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText118"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="100 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText119"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.00%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText120"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="10.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText121"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.00%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText122"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="54%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText129"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText130"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText131"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText132"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText133"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText134"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText135"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText136"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText137"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText138"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText139"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText140"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText153"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="100 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText154"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText155"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText156"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText157"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText163"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText164"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText165"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText166"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText167"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText173"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText174"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText175"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="10001 Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText176"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText177"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc - 10001Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText178"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc + 10001Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="TX - II"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="5 ± 0.25V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="12 ± 0.50V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-12 ± 0.50V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28 ± 1V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="42 - 48.1V"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+
+                    <EditText
+                        android:id="@+id/editText17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-25 to 70°C"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 to 40ºC "
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 to 40ºC"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText20"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="False"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+                    <EditText
+                        android:id="@+id/editText39"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal ± 1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="113.20°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.80º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText42"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30 ± 2%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText43"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.20%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText44"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="31.8 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText45"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30 ± 2%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText46"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.2 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText47"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="31.8 %"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText48"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.0 ± 1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText49"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="15.2 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText50"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.8 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText51"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0 ± 3.0 dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText52"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-2.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText53"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText54"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="1.20:1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText55"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Enabled"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText56"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="------ Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText62"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-0.56º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText63"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="85.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText64"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="98.7%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText65"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="102.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText66"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+
+                    <EditText
+                        android:id="@+id/editText75"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal -1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText76"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Nominal +1°"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText77"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText78"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="32.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText79"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="28.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText80"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="32.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText81"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="15.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText82"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="17.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText87"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="-0.56º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText88"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="85.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText89"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="98.7%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText90"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="102.5%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText98"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.00 Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText99"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText100"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText101"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText102"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Normal"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText103"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText104"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="Monitor #2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+
+                    <EditText
+                        android:id="@+id/editText111"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="114.00 Degrees"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText112"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText113"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText114"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="16.0 (Ratio)"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText115"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.0dB"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText116"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="enabled"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="TX - II"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_700" />
+                    <EditText
+                        android:id="@+id/editText123"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.00º"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText124"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="100 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText125"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="0.00%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText126"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="10.0%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText127"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30.00%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText128"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="54%"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <EditText
+                        android:id="@+id/editText141"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText142"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText143"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText144"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText145"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText146"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText147"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText148"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText149"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText150"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText151"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText152"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                    android:id="@+id/editText158"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="100 watts"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText159"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText160"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText161"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText162"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="2.5 watts"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editText168"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText169"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText170"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText171"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText172"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint=" &lt;1.1"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText179"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText180"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="30Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText181"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="10001 Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+                    <EditText
+                        android:id="@+id/editText182"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/editText183"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc - 10001Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/editText184"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Fc + 10001Hz"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textAlignment="center" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Remarks : "
+                    android:textColor="@color/textViewColor"
+                    android:layout_weight=".7" />
+
+                <EditText
+                    android:id="@+id/editText185"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textViewWatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Form Created by - Akshay Bele"
+                android:textAlignment="center"
+                android:textStyle="italic|bold"
+                android:textColor="@color/teal_700" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
