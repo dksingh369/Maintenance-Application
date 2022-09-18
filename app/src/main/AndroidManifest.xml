@@ -25,6 +25,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".psr_selex_si_atcr33s_weekly"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33_sdaily"
+            android:exported="false" />
+        <activity
             android:name=".mssr_ngosco_monthly"
             android:exported="false" />
         <activity
