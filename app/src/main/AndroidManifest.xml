@@ -25,6 +25,21 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".sur_psr_make"
+            android:exported="false" />
+        <activity
+            android:name=".sur_psr_selex"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33s_monthly"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33_sdaily"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33s_weekly"
+            android:exported="false" />
+        <activity
             android:name=".LlzIndra70MonthlyActivity"
             android:exported="false" />
         <activity
@@ -46,9 +61,6 @@
             android:name=".GpThalesMonthlyActivity"
             android:exported="false" />
 
-        <activity
-            android:name=".NavAidsNDBSAC100MonthlyActivity"
-            android:exported="true" />
         <activity
             android:name=".VhfRxJotMonthlyActivity"
             android:exported="false" />

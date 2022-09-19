@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psr_selex_si_atcr33s_monthly"
+    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml,HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Preventive maintenance Schedule- Monthly (PSR)"
+                android:textStyle="bold"
+                android:textColor="@color/textViewColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Name: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textViewDesig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Desig: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <TextView
+                        android:id="@+id/textViewEmpid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Emp No.: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <TextView
+                        android:id="@+id/textViewLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Location: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+
+            </LinearLayout> <!-- employee details-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:textColor="@color/textViewColor"
+                    android:text="Equipment: PSR" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textViewColor"
+                    android:layout_marginStart="30dp"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:text="Make/Model:  Selex-Si/ATCR33S DPC" />
+            </LinearLayout> <!-- top Headings-->
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="@color/textViewColor"
+                android:text="Frequency: 2775/2825 MHz" />
+
+            <TextView
+                android:id="@+id/textViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Date and Time:" /> <!-- Date & time -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:hint="Station"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:hint="Region "
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+            </LinearLayout> <!-- top entries of schedule-->
+
+
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:text="4. Monitor Data:  LCP PSR "
+                android:textStyle="bold"/> <!-- 4.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="75dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.1"/>
+                    <TextView
+                        android:id="@+id/textView1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.2"/>
+                    <TextView
+                        android:id="@+id/textView1.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.3"/>
+                    <TextView
+                        android:id="@+id/textView1.4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.4"/>
+                    <TextView
+                        android:id="@+id/textView1.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.5"/>
+                    <TextView
+                        android:id="@+id/textView1.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.6"/>
+                    <TextView
+                        android:id="@+id/textView1.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.7"/>
+                    <TextView
+                        android:id="@+id/textView1.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.8"/>
+                    <TextView
+                        android:id="@+id/textView1.9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.9"/>
+                    <TextView
+                        android:id="@+id/textView1.10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.10"/>
+                    <TextView
+                        android:id="@+id/textView1.11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.11"/>
+                    <TextView
+                        android:id="@+id/textView1.12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.12"/>
+                    <TextView
+                        android:id="@+id/textView1.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.13"/>
+                    <TextView
+                        android:id="@+id/textView1.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.14"/>
+                    <TextView
+                        android:id="@+id/textView1.15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.15"/>
+                    <TextView
+                        android:id="@+id/textView1.16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.16"/>
+                    <TextView
+                        android:id="@+id/textView1.18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.17"/>
+                    <TextView
+                        android:id="@+id/textView1.17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2.0"/>
+                    <TextView
+                        android:id="@+id/textView1.19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2.1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="NAME OF THE CHECK"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Programmability of Target \n Low/High beam selection" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Programmability of weather \n Low/High beam selection "
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Programmability of Target STC Law " />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Programmability of weather STC Law" />
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Weight Selection Map" />
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="STAC &amp; FDM" />
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="STEM Target" />
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="STEM Weather" />
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="ACOM Map" />
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="DBM Map" />
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="DCOM Map" />
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="CLM Map" />
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="FAN Map" />
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clutter Sensor map" />
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Fine Doppler Map" />
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Independent Weather Channel" />
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Weather level Display" />
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="TX Assy. Blowers operation check" />
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="TTG Check" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Nominal"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewS.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+                    <TextView
+                        android:id="@+id/textViewS.19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OK"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewLlzNormarcDailySMPSObs"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:text="ACTUAL STATUS"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewLlzNormarcDailySMPSPS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="RX-A" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"/>
+                                <TextView
+                                    android:id="@+id/textView31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView39"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView41"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView42"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView43"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView44"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView46"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView47"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView48"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView49"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView50"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="RX-B" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView51"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView52"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView53"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView54"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView55"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView56"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView57"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView58"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView59"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView60"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView61"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView62"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView63"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView64"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView65"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView66"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView67"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView70"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <Switch
+                                    android:id="@+id/switch38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:text="Not OK "
+                                    android:textOn="OK"
+                                    android:textOff="Not Ok"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                                <TextView
+                                    android:id="@+id/textView69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="3"
+                                    android:text="OK"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout> <!--4.0- normal status + 2 column editext inputs-->
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_span="3"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:hint="Write Remarks here(If any)" />   <!-- Remarks-->
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:text="Submit Schedule"/>  <!--Submit -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Sign Document"/>  <!--Sign -->
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:textStyle="italic"
+                android:text="Form Created by- T Karthik Kumar"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
