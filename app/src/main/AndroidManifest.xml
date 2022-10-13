@@ -25,6 +25,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".psr_eldis_4_rl200_daily"
+            android:exported="false" />
+        <activity
             android:name=".sur_psr_make"
             android:exported="false" />
         <activity
@@ -60,7 +63,6 @@
         <activity
             android:name=".GpThalesMonthlyActivity"
             android:exported="false" />
-
         <activity
             android:name=".VhfRxJotMonthlyActivity"
             android:exported="false" />

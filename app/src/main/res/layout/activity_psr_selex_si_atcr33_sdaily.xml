@@ -1512,7 +1512,7 @@
 
 
 
-            </LinearLayout> <!--3.0 - normal status + 1 column switch inputs-->
+            </LinearLayout> <!--3.0 - normal status + 1 column EDITTEXT inputs-->
 
             <TextView
                 android:id="@+id/textView97"
