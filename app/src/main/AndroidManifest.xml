@@ -25,10 +25,22 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".NDBSAC100"
+            android:name=".psr_eldis_4_rl200_daily"
             android:exported="false" />
         <activity
-            android:name=".DVORASII1150"
+            android:name=".sur_psr_make"
+            android:exported="false" />
+        <activity
+            android:name=".sur_psr_selex"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33s_monthly"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33_sdaily"
+            android:exported="false" />
+        <activity
+            android:name=".psr_selex_si_atcr33s_weekly"
             android:exported="false" />
         <activity
             android:name=".LlzIndra70MonthlyActivity"
@@ -80,28 +92,16 @@
             android:exported="false" />
         <activity
             android:name=".NavAidsDMEMaru310and320WeeklyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NavAidsNDBSAC100WeeklyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NavAidsNDBSAC100DailyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NavAidsDMEMaru310and320AnnualActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NavAidsDMEMaru310and320SixMonthlyActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".NavAidsDMEThales415and435AnnualActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".NavAidsDMEThales415and435SixMonthlyActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".NavAidsDMEThales415and435WeeklyActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".NavAidsDMEThales415and435DailyActivity"
             android:exported="false" />
@@ -132,9 +132,6 @@
         <activity
             android:name=".NavAidsDVORGcel755DailyActivity"
             android:exported="false" />
-        <activity
-            android:name=".NavAidsDMEMaru310and320DailyActivity"
-            android:exported="true" />
         <activity
             android:name=".NavAidsDMEThales415and435MonthlyActivity"
             android:exported="false" />
@@ -321,12 +318,6 @@
         <activity
             android:name=".NavAidsActivity"
             android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORASII1150WeeklyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NavAidsNDBSAC100QuarterlyActivity"
-            android:exported="true" />
         <activity
             android:name=".ADSBMakeModelActivity"
             android:exported="false" />

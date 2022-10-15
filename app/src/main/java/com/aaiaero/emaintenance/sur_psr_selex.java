@@ -3,28 +3,19 @@ package com.aaiaero.emaintenance;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.ByteArrayOutputStream;
-
-public class SurMssrNgoscoActivity extends AppCompatActivity {
-
+public class sur_psr_selex extends AppCompatActivity {
     Button daily, weekly, fortnightly, monthly, quarterly, halfYearly, yearly, miscellaneous;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sur_mssr_ngosco);
+        setContentView(R.layout.activity_sur_psr_selex);
+        setTitle("SELEX PSR Maintenance");
 
-        setTitle("NGOSCO MSSR Maintenance");
-
-        daily = (Button) findViewById(R.id.daily);
+        daily = (Button) findViewById(R.id.dailypsr);
         weekly = (Button) findViewById(R.id.weekly);
         fortnightly = (Button) findViewById(R.id.fortnightly);
         monthly = (Button) findViewById(R.id.monthly);
@@ -39,14 +30,14 @@ public class SurMssrNgoscoActivity extends AppCompatActivity {
 
     public void dailyClicked (View view){
 
-        Intent intent = new Intent(getApplicationContext(),SurMssrNgoscoDailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33_sdaily.class);
         startActivity(intent);
 
 
     }
 
     public void weeklyClicked (View view){
-        Intent intent = new Intent(getApplicationContext(),mssr_ngosco_weekly.class);
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33s_weekly.class);
         startActivity(intent);
 
 
@@ -60,7 +51,7 @@ public class SurMssrNgoscoActivity extends AppCompatActivity {
     }
 
     public void monthlyClicked (View view){
-        Intent intent = new Intent(getApplicationContext(),mssr_ngosco_monthly.class);
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33s_monthly.class);
         startActivity(intent);
 
 
