@@ -2794,7 +2794,7 @@
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<27°C"/>
+                        android:text="&lt;27°C"/>
                     <TextView
                         android:id="@+id/textView4s.12"
                         android:layout_width="match_parent"
@@ -2802,7 +2802,7 @@
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<21°C"/>
+                        android:text="&lt;21°C"/>
                     <TextView
                         android:id="@+id/textView4s.13"
                         android:layout_width="match_parent"
@@ -2810,7 +2810,7 @@
                         android:layout_marginTop="58dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<27°C"/>
+                        android:text="&lt; 27°C"/>
                     <TextView
                         android:id="@+id/textView4s.14"
                         android:layout_width="match_parent"
@@ -3451,7 +3451,7 @@
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<27°C"/>
+                        android:text="&lt;27°C"/>
                     <TextView
                         android:id="@+id/textView5s.12"
                         android:layout_width="match_parent"
@@ -3459,7 +3459,7 @@
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<21°C"/>
+                        android:text="&lt;21°C"/>
                     <TextView
                         android:id="@+id/textView5s.13"
                         android:layout_width="match_parent"
@@ -3467,7 +3467,7 @@
                         android:layout_marginTop="58dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="<27°C"/>
+                        android:text="&lt;27°C"/>
                     <TextView
                         android:id="@+id/textView5s.14"
                         android:layout_width="match_parent"
@@ -4159,7 +4159,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView7s2"
@@ -4167,7 +4167,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView7s3"
@@ -4175,7 +4175,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView7s4"
@@ -4479,7 +4479,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView8s2"
@@ -4487,7 +4487,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView8s3"
@@ -4495,7 +4495,7 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
-                        android:text="<2.5 dBm"
+                        android:text="&lt;2.5 dBm"
                         android:textColor="@color/textViewColor" />
                     <TextView
                         android:id="@+id/textView8s4"
@@ -5238,7 +5238,7 @@
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text=">80%"/>
+                        android:text="&lt;80%"/>
                     <TextView
                         android:id="@+id/textView11s.6"
                         android:layout_width="match_parent"
