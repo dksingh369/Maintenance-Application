@@ -170,7 +170,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         PdfDocument.Page myPage1 = myPdfdocument.startPage(myPageInfo1);
 
         Canvas canvas = myPage1.getCanvas();
-        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.surv_adsb_comsoft_daily);
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.surv_adsb_comsoft_daily);
         scaledbmp = Bitmap.createScaledBitmap(bmp,725,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
