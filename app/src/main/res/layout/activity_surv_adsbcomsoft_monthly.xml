@@ -130,7 +130,7 @@
                 android:layout_marginStart="10dp"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/textView98"
+                    android:id="@+id/textViewSN1"
                     android:layout_width="wrap_content"
                     android:layout_height="65dp"
                     android:textColor="@color/teal_700"
@@ -158,7 +158,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/textView99"
+                    android:id="@+id/textView1p"
                     android:layout_width="match_parent"
                     android:layout_height="65dp"
                     android:layout_marginTop="5dp"
@@ -166,19 +166,232 @@
                     android:textColor="@color/teal_700"
                     android:text="Parameter"
                     android:textStyle="bold"/>
+
                 <TextView
-                    android:id="@+id/textView100"
+                    android:id="@+id/textView1p.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Sensor Configuration"
+                    android:textColor="@color/textViewColor" />
+
+                <TextView
+                    android:id="@+id/textView1p.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS Latitude"/>
+                <TextView
+                    android:id="@+id/textView1p.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS  Longitude"/>
+                <TextView
+                    android:id="@+id/textView1p.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS  Geodial  Height"/>
+
+                <TextView
+                    android:id="@+id/textView2p.0"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="5dp"
                     android:gravity="center_vertical"
                     android:textColor="@color/textViewColor"
-                    android:text="Sensor Configuration" />
+                    android:text="Power on Self Test (POST) Results"/>
+                <TextView
+                    android:id="@+id/textView2p.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="General Result"/>
+                <TextView
+                    android:id="@+id/textView2p.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS"/>
 
+                <TextView
+                    android:id="@+id/textView2p.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Temp Sensing"/>
+                <TextView
+                    android:id="@+id/textView2p.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Voltage Sensing"/>
+                <TextView
+                    android:id="@+id/textView2p.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="FPGA"/>
+                <TextView
+                    android:id="@+id/textView2p.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Receiver"/>
 
+                <TextView
+                    android:id="@+id/textView3p.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="System Status Information (Maintenance Mode)"/>
+                <TextView
+                    android:id="@+id/textView3p.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="CPU Load"/>
+                <TextView
+                    android:id="@+id/textView3p.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS Status"/>
+                <TextView
+                    android:id="@+id/textView3p.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS Synchronized"/>
+                <TextView
+                    android:id="@+id/textView3.1p.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Voltages & Temperature"/>
+                <TextView
+                    android:id="@+id/textView3.1p.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Intermediate volt (+ ve)"/>
+                <TextView
+                    android:id="@+id/textView3.1p.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Intermediate volt (- ve)"/>
+                <TextView
+                    android:id="@+id/textView3.1p.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="GPS  Voltage"/>
+                <TextView
+                    android:id="@+id/textView3.1p.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="FPGA Core Voltage"/>
+                <TextView
+                    android:id="@+id/textView3.1p.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="FPGA  Auxiliary Voltage"/>
+                <TextView
+                    android:id="@+id/textView3.1p.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="DSP Board Voltage"/>
+                <TextView
+                    android:id="@+id/textView3.1p.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="DSP Board Temperature"/>
 
-
-
+                <TextView
+                    android:id="@+id/textView3.2p.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Voltages & Temperature"/>
+                <TextView
+                    android:id="@+id/textView3.2p.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Intermediate volt (+ ve)"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -195,6 +408,159 @@
                     android:gravity="center_vertical"
                     android:text="Normal Status"
                     android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textView1s.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="58dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="deg"/>
+                <TextView
+                    android:id="@+id/textView1s.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="deg"/>
+                <TextView
+                    android:id="@+id/textView1s.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="meters"/>
+                <TextView
+                    android:id="@+id/textView2s.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="58dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView2s.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView2s.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView2s.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView2s.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView2s.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Passed"/>
+                <TextView
+                    android:id="@+id/textView3s.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="58dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="0%-75%"/>
+                <TextView
+                    android:id="@+id/textView3s.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Yes "/>
+                <TextView
+                    android:id="@+id/textView3s.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Yes "/>
+                <TextView
+                    android:id="@+id/textView3.1s.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="58dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text=" 9.5 V to 13.5 V"/>
+                <TextView
+                    android:id="@+id/textView3.1s.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="-13.5 V to -9.5 V "/>
+                <TextView
+                    android:id="@+id/textView3.1s.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="9.5 V to 13.5 V"/>
+                <TextView
+                    android:id="@+id/textView3.1s.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="1.0 V to 1.4 V"/>
+                <TextView
+                    android:id="@+id/textView3.1s.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="2.3 V to 2.7 V"/>
+                <TextView
+                    android:id="@+id/textView3.1s.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="3.1 V to 3.5 V"/>
+                <TextView
+                    android:id="@+id/textView3.1s.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="-20&#186; to 70 &#186;C"/>
+
 
 
 
