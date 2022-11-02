@@ -166,6 +166,7 @@
 
 
 
+
             <TextView
                 android:id="@+id/textView1.0"
                 android:layout_width="match_parent"
@@ -1262,15 +1263,14 @@
                         android:textStyle="bold"
                         android:gravity="center_vertical"
                         android:text="Observed Status" />
-                    <EditText
-                        android:id="@+id/editText16"
+                    <Spinner
+                        android:id="@+id/spinner1"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:ems="10"
-                        android:hint="Enter"
-                        android:minHeight="48dp"
-                        android:textSize="14sp"/>
+                        android:layout_span="2"
+                        android:layout_weight="1.5"
+                        android:entries="@array/MssrDailyStatus"
+                        android:textAlignment="viewEnd" />
                     <EditText
                         android:id="@+id/editText17"
                         android:layout_width="match_parent"
@@ -7220,6 +7220,48 @@
 
 
 
+            <EditText
+                android:id="@+id/editText146"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:hint="Write Remarks here(If any)" />   <!-- Remarks-->
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:text="Submit Schedule"/>  <!--Submit -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Sign Document"/>  <!--Sign -->
+            <TextView
+                android:id="@+id/textView238"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:textStyle="italic"
+                android:text="Form Created by- T Karthik Kumar"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
 

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress ALL -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal|center_vertical"
     tools:context=".SurvADSBComsoftDailyActivity">
 
     <ScrollView
@@ -93,7 +91,7 @@
                     android:ems="10"
                     android:layout_weight="1"
                     android:textColor="@color/textViewColor"
-                    android:text="Equipment: PSR" />
+                    android:text="Equipment: ADS-B" />
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
@@ -102,22 +100,12 @@
                     android:layout_marginStart="30dp"
                     android:ems="10"
                     android:layout_weight="1"
-                    android:text="Make/Model:  ELDIS RL-2000" />
+                    android:text="Make/Model:  COMSOFT" />
             </LinearLayout> <!-- top Headings-->
 
 
 
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:layout_weight="1"
-                android:textColor="@color/textViewColor"
-                android:text="Frequency: 2735/2820MHz" />
 
             <TextView
                 android:id="@+id/textViewDateTime"
@@ -129,348 +117,318 @@
                 android:text="Date and Time"
                 android:textColor="@color/textViewColor"/> <!-- Date & time -->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <EditText
-                    android:id="@+id/editText1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Station"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    android:textColorHint="#546E7A"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Region "
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    android:textColorHint="#546E7A"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView1.0"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/teal_700"
-            android:layout_marginStart="5dp"
-            android:textSize="14sp"
-            android:text="1. General :"
-            android:textStyle="bold"/> <!-- 1.0 Side headings-->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViewSN1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="S.No"
-                    android:textColor="@color/teal_700"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView1.1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="1.1"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor"
-                    android:text="1.2"/>
-                <TextView
-                    android:id="@+id/textView1.3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor"
-                    android:text="1.3"/>
-                <TextView
-                    android:id="@+id/textView1.4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor"
-                    android:text="1.4"/>
-                <TextView
-                    android:id="@+id/textView1.5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor"
-                    android:text="1.5"/>
 
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:id="@+id/textView1p"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/teal_700"
-                    android:text="Parameters to be checked"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/textView1.1p"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="a) Cleanliness"
-                    android:textColor="@color/textViewColor" />
-
-                <TextView
-                    android:id="@+id/textView1.2p"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="b) Room Temperature"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.3p"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="c) Humidity "
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.4p"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="d) Room lighting"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.5p"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="e) Air conditioner Status "
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-
-
-
-
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/textView1s"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/teal_700"
-                    android:gravity="center_vertical"
-                    android:text="Normal status"
-                    android:textStyle="bold"/>
-
-
-                <TextView
-                    android:id="@+id/textView1.1s"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="OK"
-                    android:textColor="@color/textViewColor" />
-
-                <TextView
-                    android:id="@+id/textView1.2s"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="< 25 Deg. Celsius"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.3s"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:text="20% to 80%"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/textViewColor" />
-                <TextView
-                    android:id="@+id/textView1.4s"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="OK"
-                    android:textColor="@color/textViewColor" />
-
-                <TextView
-                    android:id="@+id/textView1.5s"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:text="All AC working normal"
-                    android:textColor="@color/textViewColor" />
-
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/textView1os"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/teal_700"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:text="Observed Status" />
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
-                    <Switch
-                        android:id="@+id/switch1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:text="Not OK "
-                        android:textOff="Not OK"
-                        android:textOn="OK"
-                        tools:ignore="TouchTargetSizeCheck" />
-                    <TextView
-                        android:id="@+id/textViewsw1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="3"
-                        android:text="OK"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
-
-
-
-                <EditText
-                    android:id="@+id/editText3"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:ems="10"
-                    android:hint="Enter"
-                    android:minHeight="48dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText4"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:ems="10"
-                    android:hint="Enter"
-                    android:minHeight="48dp"
-                    android:textSize="14sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
-                    <Switch
-                        android:id="@+id/switch2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:text="Not OK "
-                        android:textOff="Not OK"
-                        android:textOn="OK"
-                        tools:ignore="TouchTargetSizeCheck" />
-                    <TextView
-                        android:id="@+id/textViewsw2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="3"
-                        android:text="OK"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
-                <EditText
-                    android:id="@+id/editText5"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:ems="10"
-                    android:hint="Enter"
-                    android:minHeight="48dp"
-                    android:textSize="14sp" />
-
-
-
-            </LinearLayout>
-
-        </LinearLayout> <!--1.0 - normal status + 1 column EDITTEXT inputs-->
             <TextView
                 android:id="@+id/textView1.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="1. General :"
+                android:textStyle="bold"/> <!-- 1.0 Side headings-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewSN1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="S.No"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView1.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="1.1"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.2"/>
+                    <TextView
+                        android:id="@+id/textView1.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.3"/>
+                    <TextView
+                        android:id="@+id/textView1.4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.4"/>
+                    <TextView
+                        android:id="@+id/textView1.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.5"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView1p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView1.1p"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="a) Cleanliness"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView1.2p"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="b) Room Temperature"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.3p"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="c) Humidity "
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.4p"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="d) Room lighting"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.5p"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="e) Air conditioner Status "
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView1s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView1.1s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="OK"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView1.2s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="&lt; 25 Deg. Celsius"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.3s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:text="20% to 80%"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView1.4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="OK"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView1.5s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="All AC working normal"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView1os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Not OK "
+                            android:textOff="Not OK"
+                            android:textOn="OK"
+                            tools:ignore="TouchTargetSizeCheck" />
+                        <TextView
+                            android:id="@+id/textViewsw1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:text="OK"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Not OK "
+                            android:textOff="Not OK"
+                            android:textOn="OK"
+                            tools:ignore="TouchTargetSizeCheck" />
+                        <TextView
+                            android:id="@+id/textViewsw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:text="OK"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout> <!--1.0 - normal status + 1 column EDITTEXT inputs-->
+
+            <TextView
+                android:id="@+id/textView2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -527,7 +485,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textView1s"
+                        android:id="@+id/textView2s"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
@@ -559,7 +517,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textView1os"
+                        android:id="@+id/textView2.1os"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
@@ -574,7 +532,7 @@
 
 
                     <EditText
-                        android:id="@+id/editText3"
+                        android:id="@+id/editText6"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -604,148 +562,34 @@
                 android:text="i) ADS-B Equipment Status"
                 android:textStyle="bold"/> <!-- 2.0 sub Side headings-->
 
-
+            <TextView
+                android:id="@+id/textView2.1lengends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:text="1) E-State (Equipment) Colors: Green-Normal; White –Switch Off; Yellow-Minor Fault; Orange-Major Fault; Red- Critical Fault; Blue-Initial State.
+2) C-State (Control &amp; Monitoring State) Colors: Black- Normal acquisition; Blue- Unknown Status; Red- User Set Status"
+                android:textStyle="bold"/> <!-- legends-->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/textViewSN2.1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:textColor="@color/teal_700"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:text="S.No"
-                        android:gravity="center_vertical"
-                        android:layout_weight="0.2"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:id="@+id/textView2.1.1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.1"/>
-                    <TextView
-                        android:id="@+id/textView2.1.2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.2"/>
-                    <TextView
-                        android:id="@+id/textView2.1.3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.3"/>
-                    <TextView
-                        android:id="@+id/textView2.1.4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.4"/>
-                    <TextView
-                        android:id="@+id/textView2.1.5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.5"/>
-                    <TextView
-                        android:id="@+id/textView2.1.6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.6"/>
-                    <TextView
-                        android:id="@+id/textView2.1.7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.7"/>
-                    <TextView
-                        android:id="@+id/textView2.1.8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.8"/>
-                    <TextView
-                        android:id="@+id/textView2.1.9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.9"/>
-                    <TextView
-                        android:id="@+id/textView2.1.10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.10"/>
-                    <TextView
-                        android:id="@+id/textView2.1.11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.11"/>
-                    <TextView
-                        android:id="@+id/textView2.1.12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="2.1.12"/>
-                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="20dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textView2.1p"
+                        android:id="@+id/textView2.1.1p0"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
@@ -754,102 +598,30 @@
                         android:text="Parameters to be checked"
                         android:textStyle="bold"/>
                     <TextView
-                        android:id="@+id/textView2.1.1p"
+                        android:id="@+id/textView2.1.1p1"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="102dp"
                         android:layout_marginTop="5dp"
-                        android:text="Power Supply G1 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="Sensor-A "/>
                     <TextView
-                        android:id="@+id/textView2.1.2p"
+                        android:id="@+id/textView2.1.2p1"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="102dp"
                         android:layout_marginTop="5dp"
-                        android:text="Power Supply G2 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="Sensor-B"/>
                     <TextView
-                        android:id="@+id/textView2.1.3p"
+                        android:id="@+id/textView2.1.3p1"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="102dp"
                         android:layout_marginTop="5dp"
-                        android:text="Power Supply G3 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.4p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Power Supply G4 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.5p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Check Power L1"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.6p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Check Power L2"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.7p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Check Power L3 "
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.8p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="G1+G2 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.9p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="G3+G4 24V DC"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.10p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="AG Upper Fans "
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="Site Monitor"/>
 
-                    <TextView
-                        android:id="@+id/textView2.1.11p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Operation Phase"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
-                    <TextView
-                        android:id="@+id/textView2.1.12p"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Temperature :room(Out of Toler) "
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor" />
 
 
                 </LinearLayout>
@@ -862,103 +634,53 @@
 
 
                     <TextView
-                        android:id="@+id/textViewG.1"
+                        android:id="@+id/textView2.1.1p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="40dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-
+                        android:text="C-State"/>
                     <TextView
-                        android:id="@+id/textViewG.2"
+                        android:id="@+id/textView2.1.2p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="E-State"/>
                     <TextView
-                        android:id="@+id/textViewG.3"
+                        android:id="@+id/textView2.1.3p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="C-State"/>
                     <TextView
-                        android:id="@+id/textViewG.4"
+                        android:id="@+id/textView2.1.4p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="E-State"/>
                     <TextView
-                        android:id="@+id/textViewG.5"
+                        android:id="@+id/textView2.1.5p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="C-State"/>
                     <TextView
-                        android:id="@+id/textViewG.6"
+                        android:id="@+id/textView2.1.6p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.7"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.8"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.9"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.10"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.11"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.12"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-
+                        android:text="E-State"/>
 
 
                 </LinearLayout>
@@ -970,7 +692,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textView2.1s"
+                        android:id="@+id/textView2.1.0s"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
@@ -980,7 +702,47 @@
                         android:textStyle="bold"/>
 
                     <TextView
-                        android:id="@+id/textViewG.1"
+                        android:id="@+id/textViews2.1.1s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Black"/>
+                    <TextView
+                        android:id="@+id/textViews2.1.2s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textViews2.1.3s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Black"/>
+                    <TextView
+                        android:id="@+id/textViews2.1.4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textViews2.1.5s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Black"/>
+                    <TextView
+                        android:id="@+id/textViews2.1.6s"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -988,94 +750,194 @@
                         android:textColor="@color/textViewColor"
                         android:text="Green"/>
 
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textViewG.2"
+                        android:id="@+id/textView2.1.1os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:text="Observed Status" />
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/c_state"
+                        android:textAlignment="viewEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/c_state"
+                        android:textAlignment="viewEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/c_state"
+                        android:textAlignment="viewEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinner6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout> <!--2.1.w - normal status + 1 column switch inputs-->
+
+
+            <TextView
+                android:id="@+id/textView2.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:text="ii) Center Status"
+                android:textStyle="bold"/> <!-- 2.2 sub Side headings-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView2.2.1p0"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView2.2.1p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="QIC "/>
+                    <TextView
+                        android:id="@+id/textView2.2.2p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="Server H/W"/>
+                    <TextView
+                        android:id="@+id/textView2.2.3p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/textViewColor"
+                        android:text="ESMS S/W"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView2.2.1p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="E-State"/>
+                    <TextView
+                        android:id="@+id/textView2.2.2p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="Go/No-Go Status"/>
                     <TextView
-                        android:id="@+id/textViewG.3"
+                        android:id="@+id/textView2.2.3p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="E-State"/>
                     <TextView
-                        android:id="@+id/textViewG.4"
+                        android:id="@+id/textView2.2.4p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="Disk usage"/>
                     <TextView
-                        android:id="@+id/textViewG.5"
+                        android:id="@+id/textView2.2.5p2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center_vertical"
                         android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.6"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.7"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.8"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.9"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.10"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.11"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
-                    <TextView
-                        android:id="@+id/textViewG.12"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/textViewColor"
-                        android:text="Green"/>
+                        android:text="E-State"/>
 
 
 
@@ -1088,7 +950,67 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/textView62"
+                        android:id="@+id/textView2.2.0s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal Status "
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textViews2.2.1s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textViews2.2.2s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Go"/>
+                    <TextView
+                        android:id="@+id/textViews2.2.3s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textViews2.2.4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt; 80%"/>
+                    <TextView
+                        android:id="@+id/textViews2.2.5s"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView2.2os"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
@@ -1096,6 +1018,555 @@
                         android:textStyle="bold"
                         android:gravity="center_vertical"
                         android:text="Observed Status" />
+                    <Spinner
+                        android:id="@+id/spinner7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <Switch
+                            android:id="@+id/switch3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Go "
+                            android:textOff="Go"
+                            android:textOn="No-Go Status"
+                            tools:ignore="TouchTargetSizeCheck" />
+                        <TextView
+                            android:id="@+id/textViewsw3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:text="No-Go Status"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/spinner8"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner9"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/e_state"
+                        android:textAlignment="viewEnd" />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout> <!--2.2.w - normal status + 1 column switch inputs-->
+
+
+            <TextView
+                android:id="@+id/textView3.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="III. QIC APPLICATION"
+                android:textStyle="bold"/> <!-- 3.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView3p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView3p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Site Monitor Transmission in DF-18"
+                        android:textColor="@color/textViewColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView3s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView3s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="OK"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView3os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--3.0 - normal status + 1 column EDITTEXT inputs-->
+
+            <TextView
+                android:id="@+id/textView4.1.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="IV. QCMS APPLICATION         "
+                android:textStyle="bold"/> <!-- 4. Side headings-->
+
+            <TextView
+                android:id="@+id/textView4.1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:text="i) Sensor-A Monitoring"
+                android:textStyle="bold"/> <!-- 4.1.1 sub Side headings-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView4.1p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView4.1p.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Sensor data updating"/>
+                    <TextView
+                        android:id="@+id/textView4.1p.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Temperature"/>
+                    <TextView
+                        android:id="@+id/textView4.1p.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="CPU Load"/>
+                    <TextView
+                        android:id="@+id/textView4.1p.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="GPS Connected"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4.1s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView4.1s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal"/>
+                    <TextView
+                        android:id="@+id/textView4.1s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="-20º C to 70º C"/>
+                    <TextView
+                        android:id="@+id/textView4.1s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0% to 70%"/>
+                    <TextView
+                        android:id="@+id/textView4.1s4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Yes"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4.1os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--4.1.0 - normal status + 1 column EDITTEXT inputs-->
+
+
+
+            <TextView
+                android:id="@+id/textView4.2.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:text="i) Sensor-B Monitoring"
+                android:textStyle="bold"/> <!-- 4.2.1 sub Side headings-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView4.2p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView4.2p.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Sensor data updating"/>
+                    <TextView
+                        android:id="@+id/textView4.2p.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Temperature"/>
+                    <TextView
+                        android:id="@+id/textView4.2p.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="CPU Load"/>
+                    <TextView
+                        android:id="@+id/textView4.2p.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="GPS Connected"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4.2s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView4.2s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal"/>
+                    <TextView
+                        android:id="@+id/textView4.2s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="-20º C to 70º C"/>
+                    <TextView
+                        android:id="@+id/textView4.2s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0% to 70%"/>
+                    <TextView
+                        android:id="@+id/textView4.2s4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Yes"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4.2os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
+                    <EditText
+                        android:id="@+id/editText13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
                     <EditText
                         android:id="@+id/editText16"
                         android:layout_width="match_parent"
@@ -1105,6 +1576,111 @@
                         android:hint="Enter"
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--4.2.0 - normal status + 1 column EDITTEXT inputs-->
+
+
+
+
+            <TextView
+                android:id="@+id/textView5.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="V. QCMS PC Time Check"
+                android:textStyle="bold"/> <!-- 5.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView5p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView5p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Time synchronization with GPS Time"
+                        android:textColor="@color/textViewColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView5s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView5s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="OK"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView5os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
                     <EditText
                         android:id="@+id/editText17"
                         android:layout_width="match_parent"
@@ -1113,7 +1689,157 @@
                         android:ems="10"
                         android:hint="Enter"
                         android:minHeight="48dp"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--5.0 - normal status + 1 column EDITTEXT inputs-->
+
+
+            <TextView
+                android:id="@+id/textView6.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="VI.  CONNECTOR-BOX"
+                android:textStyle="bold"/> <!-- 6.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView6p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView6p.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Status of +24V Power Supply-1"/>
+                    <TextView
+                        android:id="@+id/textView6p.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Status of +24V Power Supply-2"/>
+                    <TextView
+                        android:id="@+id/textView6p.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Switch-1 Status"/>
+                    <TextView
+                        android:id="@+id/textView6p.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Switch-2 Status"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView6s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textView6s.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="DC OK LED- Green"/>
+                    <TextView
+                        android:id="@+id/textView6s.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="DC OK LED- Green"/>
+                    <TextView
+                        android:id="@+id/textView6s.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Power LED-Green &amp; Other connected Links blinking"/>
+                    <TextView
+                        android:id="@+id/textView6s.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Power LED-Green &amp; Other connected Links blinking"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView6os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
                     <EditText
                         android:id="@+id/editText18"
                         android:layout_width="match_parent"
@@ -1150,6 +1876,188 @@
                         android:hint="Enter"
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--6.0 - normal status + 1 column EDITTEXT inputs-->
+
+            <TextView
+                android:id="@+id/textView7.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="VII. STATUS OF MAIN UPS -1KVA"
+                android:textStyle="bold"/> <!-- 7.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView7p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView7p.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="LED-Status Mains/ Inverter"/>
+                    <TextView
+                        android:id="@+id/textView7p.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="I/P Voltage"/>
+                    <TextView
+                        android:id="@+id/textView7p.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="I/P Frequency"/>
+                    <TextView
+                        android:id="@+id/textView7p.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="O/P Voltage"/>
+                    <TextView
+                        android:id="@+id/textView7p.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="O/P Frequency"/>
+                    <TextView
+                        android:id="@+id/textView7p.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Load"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView7s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView7s.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textView7s.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="115-300 V"/>
+                    <TextView
+                        android:id="@+id/textView7s.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="46-54 Hz"/>
+                    <TextView
+                        android:id="@+id/textView7s.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="215.6 V to 224.4 V (220 ± 2%)"/>
+                    <TextView
+                        android:id="@+id/textView7s.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="46-54 Hz"/>
+                    <TextView
+                        android:id="@+id/textView7s.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0% to 80%"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView7os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+
+
+
+
+
                     <EditText
                         android:id="@+id/editText22"
                         android:layout_width="match_parent"
@@ -1207,12 +2115,459 @@
 
 
 
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--6.0 - normal status + 1 column EDITTEXT inputs-->
+
+
+            <TextView
+                android:id="@+id/textView8.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="VIII. STATUS OF STANDBY UPS -1KVA"
+                android:textStyle="bold"/> <!-- 8.0 Side headings-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView8p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView8p.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="LED-Status Mains/ Inverter"/>
+                    <TextView
+                        android:id="@+id/textView8p.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="I/P Voltage"/>
+                    <TextView
+                        android:id="@+id/textView8p.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="I/P Frequency"/>
+                    <TextView
+                        android:id="@+id/textView8p.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="O/P Voltage"/>
+                    <TextView
+                        android:id="@+id/textView8p.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="O/P Frequency"/>
+                    <TextView
+                        android:id="@+id/textView8p.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Load"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView8s.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Green"/>
+                    <TextView
+                        android:id="@+id/textView8s.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="115-300 V"/>
+                    <TextView
+                        android:id="@+id/textView8s.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="46-54 Hz"/>
+                    <TextView
+                        android:id="@+id/textView8s.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="215.6 V to 224.4 V (220 ± 2%)"/>
+                    <TextView
+                        android:id="@+id/textView8s.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="46-54 Hz"/>
+                    <TextView
+                        android:id="@+id/textView8s.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0% to 80%"/>
 
 
                 </LinearLayout>
 
-            </LinearLayout> <!--2.1.w - normal status + 1 column switch inputs-->
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+                    <EditText
+                        android:id="@+id/editText28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--6.0 - normal status + 1 column EDITTEXT inputs-->
+
+
+            <TextView
+                android:id="@+id/textView9.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:text="IX. STATIC SWITCH INDICATION"
+                android:textStyle="bold"/> <!-- 9.0 Side headings-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView9p"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Parameters to be checked"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textView9p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="IN-1 LED"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView9p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="IN-2 LED"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView9p3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="OUT LED"
+                        android:textColor="@color/textViewColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView9s"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:gravity="center_vertical"
+                        android:text="Normal status"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/textView9s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Red"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView9s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Red"
+                        android:textColor="@color/textViewColor" />
+                    <TextView
+                        android:id="@+id/textView9s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Green"
+                        android:textColor="@color/textViewColor" />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView9os"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Observed Status"/>
+                    <EditText
+                        android:id="@+id/editText34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editText36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout> <!--9.0 - normal status + 1 column EDITTEXT inputs-->
+            <EditText
+                android:id="@+id/editText37"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:hint="Write Remarks here(If any)" />   <!-- Remarks-->
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:text="Submit Schedule"/>  <!--Submit -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Sign Document"/>  <!--Sign -->
+            <TextView
+                android:id="@+id/textView238"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:textStyle="italic"
+                android:text="Form Created by- T Karthik Kumar"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </LinearLayout>
 

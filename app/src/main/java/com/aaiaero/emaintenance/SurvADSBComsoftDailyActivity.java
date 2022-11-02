@@ -72,17 +72,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         EditText editTextHumidity;
 
         //Put all edit texts in Array serially
-        editTextArray = new EditText[]{
-                editTextRoomTemp = (EditText) findViewById(R.id.editTextRoomTemp),
-                editTextHumidity = (EditText) findViewById(R.id.editTextHumidity),
-                editTextAC = (EditText) findViewById(R.id.editTextAC),
-                editTextESMSAlarm = (EditText) findViewById(R.id.editTextESMSAlarm),
-                editTextDiskUsage = (EditText) findViewById(R.id.editTextDiskUsage),
-                editTextATemp = (EditText) findViewById(R.id.editTextATemp),
-                editTextACPULoad = (EditText) findViewById(R.id.editTextACPULoad),
-                editTextBTemp = (EditText) findViewById(R.id.editTextBTemp),
-                editTextBCPULoad = (EditText) findViewById(R.id.editTextBCPULoad),
-                editTextRemarks = (EditText) findViewById(R.id.editTextRemarks)};
+        editTextArray = new EditText[]{};
 
         Switch switch1,switch2,switch3,switch4,switch5,switch6,switch7,switch8,switch9,switch10,switch11;
         switchArray = new Switch[]{
@@ -98,7 +88,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
                 switch10 = (Switch) findViewById(R.id.switch10),
                 switch11 = (Switch) findViewById(R.id.switch11)};
 
-        Spinner spinner1,spinner2,spinner3,spinner4,spinner5,spinner6,spinner7,spinner8,spinner9,spinner10;
+        Spinner spinner1,spinner2,spinner3,spinner4,spinner5,spinner6,spinner7,spinner8,spinner9;
         spinnerArray = new Spinner[]{
                 spinner1 = (Spinner) findViewById(R.id.spinner1),
                 spinner2 = (Spinner) findViewById(R.id.spinner2),
@@ -108,8 +98,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
                 spinner6 = (Spinner) findViewById(R.id.spinner6),
                 spinner7 = (Spinner) findViewById(R.id.spinner7),
                 spinner8 = (Spinner) findViewById(R.id.spinner8),
-                spinner9 = (Spinner) findViewById(R.id.spinner9),
-                spinner10 = (Spinner) findViewById(R.id.spinner10)};
+                spinner9 = (Spinner) findViewById(R.id.spinner9)};
 
         //------------------------------End Change Here ---------------------------------
 
@@ -136,7 +125,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
             myFunctions.putSpinnerData(seperatedSpinnerData, spinnerArray);
         }
 
-        Button submitSchedule = (Button) findViewById(R.id.submitADSBComsoftDaily);
+        Button submitSchedule = (Button) findViewById(R.id.button1);
         submitSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
