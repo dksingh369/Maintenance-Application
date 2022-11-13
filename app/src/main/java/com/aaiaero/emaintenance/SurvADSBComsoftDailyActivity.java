@@ -276,7 +276,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(13);
 
-        canvas.drawText(strData,482,205,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,472,210,titlePaint);//Printing Date on PDF
 
         myPdfdocument.finishPage(myPage1);
 
@@ -303,12 +303,12 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         paint.setTextAlign(Paint.Align.LEFT);
 
         //--------------------------------Change below as per your requirement------------------------------------------------------
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 475, 676, paint);  //  For signature printing used in the last page usually
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,200,200, false), 475, 676, paint);  //  For signature printing used in the last page usually
         titlePaint.setTextSize(13);
 
-        int[] editTextXPixel2 = {538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538};
+        int[] editTextXPixel2 = {538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,144};
 
-        int[] editTextYPixel2 = {146,165,189,217,272,291,307,326,343,361,410,427,446,463,482,499,548,565,586,144};
+        int[] editTextYPixel2 = {146,165,189,217,272,291,307,326,343,361,410,427,446,463,482,499,548,565,586,688};
 
 
 

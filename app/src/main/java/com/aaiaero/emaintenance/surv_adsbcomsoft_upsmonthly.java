@@ -40,7 +40,7 @@ public class surv_adsbcomsoft_upsmonthly extends AppCompatActivity {
     private int selectedID;//Copy
     private String selectedName;//Copy
     private EditText[] editTextArray;//Copy
-    private Switch[] switchArray;//Copy
+    private Switch[] switchArray={};//Copy
     private Spinner[] spinnerArray={};//Copy
 
     private String thisActivityName = "surv_adsbcomsoft_upsmonthly"; //Change Here as per your class name
@@ -220,7 +220,7 @@ public class surv_adsbcomsoft_upsmonthly extends AppCompatActivity {
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(13);
 
-        canvas.drawText(strData,535,186,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,535,190,titlePaint);//Printing Date on PDF
         canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 430, 704, paint);  //  For signature printing used in the last page usually
         titlePaint.setTextSize(13);
         myPdfdocument.finishPage(myPage1);

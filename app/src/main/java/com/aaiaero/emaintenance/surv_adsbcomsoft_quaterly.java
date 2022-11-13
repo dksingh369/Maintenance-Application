@@ -43,7 +43,7 @@ public class surv_adsbcomsoft_quaterly extends AppCompatActivity {
     private int selectedID;//Copy
     private String selectedName;//Copy
     private EditText[] editTextArray;//Copy
-    private Switch[] switchArray;//Copy
+    private Switch[] switchArray={};//Copy
     private Spinner[] spinnerArray={};//Copy
 
     private String thisActivityName = "surv_adsbcomsoft_quaterly"; //Change Here as per your class name
