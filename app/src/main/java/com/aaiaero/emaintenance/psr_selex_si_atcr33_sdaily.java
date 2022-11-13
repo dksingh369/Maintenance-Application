@@ -333,7 +333,7 @@ public class psr_selex_si_atcr33_sdaily extends AppCompatActivity {
         paint.setTextAlign(Paint.Align.LEFT);
 
         //--------------------------------Change below as per your requirement------------------------------------------------------
-        /*anvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 373, 658, paint);  //  For signature printing used in the last page usually
+        /*canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 373, 658, paint);  //  For signature printing used in the last page usually
         titlePaint.setTextSize(13);*/
 
         int[] editTextXPixel2 = {425,425,425,570,570,570};

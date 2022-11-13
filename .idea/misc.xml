@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Project 4/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_psr_eldis4_rl200_daily.xml" value="0.26875" />
-        <entry key="..\:/Users/Project 4/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_daily.xml" value="0.24505208333333334" />
-        <entry key="..\:/Users/Project 4/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_monthly.xml" value="0.2677083333333333" />
         <entry key="..\:/Users/dksin/Downloads/New folder/emaintenance/app/src/main/res/layout/activity_personal_details.xml" value="0.1" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_adsb.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_adsbcomsoft_daily.xml" value="0.1901886860897383" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_adsbdaily.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_adsbmake_model.xml" value="0.15729166666666666" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_eldis4_rl200_psr_daily.xml" value="0.258230012825994" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_llz_normarc7000_daily.xml" value="0.2264151024877837" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_mssr_ngosco_monthly.xml" value="0.3145833333333333" />
@@ -21,10 +22,14 @@
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_sur_mssr_ngosco_daily.xml" value="0.17714285714285713" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_sur_psr_make.xml" value="0.258230012825994" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_sur_psr_selex.xml" value="0.258230012825994" />
-        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_daily.xml" value="0.19924529018924966" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_daily.xml" value="0.21891989851395433" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_daily2.xml" value="0.15729166666666666" />
-        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_monthly.xml" value="0.1901886860897383" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_monthly.xml" value="0.26132930513595165" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_quaterly.xml" value="0.2264151024877837" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surv_adsbcomsoft_upsmonthly.xml" value="0.258230012825994" />
         <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/activity_surveillance.xml" value="0.19752030782385635" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/layout/custom_dialog.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/tathu/AndroidStudioProjects/Maintenance-Application/app/src/main/res/menu/sub_menu.xml" value="0.15729166666666666" />
       </map>
     </option>
   </component>

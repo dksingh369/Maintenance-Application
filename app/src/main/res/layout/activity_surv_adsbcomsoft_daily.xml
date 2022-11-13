@@ -514,7 +514,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/textView2.1os"
@@ -1838,8 +1838,6 @@
                         android:text="Observed Status"/>
 
 
-
-
                     <EditText
                         android:id="@+id/editText18"
                         android:layout_width="match_parent"
@@ -1848,7 +1846,8 @@
                         android:ems="10"
                         android:hint="Enter"
                         android:minHeight="48dp"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp" />
+
                     <EditText
                         android:id="@+id/editText19"
                         android:layout_width="match_parent"

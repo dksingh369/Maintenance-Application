@@ -3,14 +3,9 @@ package com.aaiaero.emaintenance;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
-import java.io.ByteArrayOutputStream;
 
 public class ADSBActivity extends AppCompatActivity {
 
@@ -38,9 +33,9 @@ public class ADSBActivity extends AppCompatActivity {
     }
 
     public void dailyClicked (View view){
-        // Launch the VHF Equipment Room Activity
+        // Launch the ADSB NEW EDITED XML Activity
 
-        Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(),SurvADSBComsoftDailyActivity.class);
         startActivity(intent);
 
 
@@ -63,22 +58,24 @@ public class ADSBActivity extends AppCompatActivity {
 
     public void monthlyClicked (View view){
         // Launch the VCS Equipment Room Activity
-
-        Log.i("Monthly ", "Clicked");
-        //Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), surv_adsbcomsoft_monthly.class);
+        startActivity(intent);
 
     }
 
     public void quaterlyClicked (View view){
         // Launch the RCAG Equipment Room Activity
+        Intent intent = new Intent(getApplicationContext(),surv_adsbcomsoft_quaterly.class);
+        startActivity(intent);
 
 
 
     }
 
-    public void halfYearlyClicked (View view){
+    public void adsbupsmonthly (View view){
         // Launch the UAH Equipment Room Activity
+        Intent intent = new Intent(getApplicationContext(),surv_adsbcomsoft_upsmonthly.class);
+        startActivity(intent);
 
 
 
