@@ -4654,11 +4654,33 @@
                         android:hint="Enter"
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <Switch
+                            android:id="@+id/switch3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Mains  "
+                            android:textOff="Mains"
+                            android:textOn="Battery"
+                            tools:ignore="TouchTargetSizeCheck" />
+                        <TextView
+                            android:id="@+id/switchtextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:text="Battery"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
                     <EditText
                         android:id="@+id/editText94"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="58dp"
                         android:ems="10"
                         android:hint="Enter"
                         android:minHeight="48dp"
