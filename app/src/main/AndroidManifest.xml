@@ -25,6 +25,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".surv_ssr_eldismssr1_daily"
+            android:exported="false" />
+        <activity
             android:name=".surv_adsbcomsoft_upsmonthly"
             android:exported="false" />
         <activity
