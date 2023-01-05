@@ -13,7 +13,7 @@ import java.io.ByteArrayOutputStream;
 
 public class AmssActivity extends AppCompatActivity {
 
-    Button ecil, others;
+    Button ecil, others, IpAmssInhouse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +25,11 @@ public class AmssActivity extends AppCompatActivity {
         ecil = (Button) findViewById(R.id.ecil);
         others = (Button) findViewById(R.id.others1);
 
+        IpAmssInhouse = (Button) findViewById(R.id.IpAmssInhouse);
+
         Intent intent = getIntent();
 
-    }
+            }
 
     public void ecilClicked (View view){
 
@@ -40,7 +42,11 @@ public class AmssActivity extends AppCompatActivity {
     public void othersClicked (View view){
         // Launch the Others Equipment Room Activity
 
-
-
     }
+    public void IpAmssInhouseClicked (View view) {
+
+        Intent intent = new Intent(getApplicationContext(), AmssIpInhouseActivity.class);
+        startActivity(intent);
+    }
+
 }

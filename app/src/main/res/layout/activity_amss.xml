@@ -45,7 +45,22 @@
             android:layout_columnWeight="1"
             android:onClick="othersClicked"/>
 
+        <Button
+            android:text="ip amss (inhouse)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/IpAmssInhouse"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="IpAmssInhouseClicked"/>
+
+
     </GridLayout>
+
+
 
     <TextView
         android:text="© 2019-2020 Deepak Singh"

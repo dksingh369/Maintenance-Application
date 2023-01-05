@@ -544,6 +544,7 @@ public class ListDataActivity extends AppCompatActivity {
                             startActivity(editScreenIntent);
                             break;
 
+
                         case "VhfRxOteMonthlyActivity":
                             editScreenIntent = new Intent(ListDataActivity.this, VhfRxOteMonthlyActivity.class);
                             editScreenIntent.putExtra("id",itemID);
@@ -583,6 +584,37 @@ public class ListDataActivity extends AppCompatActivity {
                             editScreenIntent.putExtra("spinnerData", receivedData[4]);
                             startActivity(editScreenIntent);
                             break;
+
+                        case "AmssIpInhouseMonthlyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, AmssIpInhouseMonthlyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "AmssIpInhouseDailyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, AmssIpInhouseDailyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "AmssIpInhouseWeeklyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, AmssIpInhouseWeeklyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
 
                         case "GpThalesDailyActivity":
                             editScreenIntent = new Intent(ListDataActivity.this, GpThalesDailyActivity.class);
