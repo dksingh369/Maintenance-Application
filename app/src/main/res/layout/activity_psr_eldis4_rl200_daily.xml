@@ -1263,14 +1263,15 @@
                         android:textStyle="bold"
                         android:gravity="center_vertical"
                         android:text="Observed Status" />
-                    <Spinner
-                        android:id="@+id/spinner1"
+                    <EditText
+                        android:id="@+id/editText16"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_span="2"
-                        android:layout_weight="1.5"
-                        android:entries="@array/MssrDailyStatus"
-                        android:textAlignment="viewEnd" />
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"/>
                     <EditText
                         android:id="@+id/editText17"
                         android:layout_width="match_parent"
@@ -6918,7 +6919,7 @@
 
 
                     <EditText
-                        android:id="@+id/editText138"
+                        android:id="@+id/editText133"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -6927,7 +6928,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp" />
                     <EditText
-                        android:id="@+id/editText139"
+                        android:id="@+id/editText134"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7157,7 +7158,7 @@
 
 
                     <EditText
-                        android:id="@+id/editText140"
+                        android:id="@+id/editText135"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7166,7 +7167,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
                     <EditText
-                        android:id="@+id/editText141"
+                        android:id="@+id/editText136"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7175,7 +7176,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
                     <EditText
-                        android:id="@+id/editText142"
+                        android:id="@+id/editText137"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7184,7 +7185,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
                     <EditText
-                        android:id="@+id/editText143"
+                        android:id="@+id/editText138"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="58dp"
@@ -7193,7 +7194,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
                     <EditText
-                        android:id="@+id/editText144"
+                        android:id="@+id/editText139"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7202,7 +7203,7 @@
                         android:minHeight="48dp"
                         android:textSize="14sp"/>
                     <EditText
-                        android:id="@+id/editText145"
+                        android:id="@+id/editText140"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -7221,7 +7222,7 @@
 
 
             <EditText
-                android:id="@+id/editText146"
+                android:id="@+id/editText141"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
