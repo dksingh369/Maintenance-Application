@@ -336,6 +336,15 @@ public class ListDataActivity extends AppCompatActivity {
                             editScreenIntent.putExtra("spinnerData", receivedData[4]);
                             startActivity(editScreenIntent);
                             break;
+                        case "psr_eldis_4_rl200_daily": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this, surv_adsbcomsoft_upsmonthly.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
 
 
 

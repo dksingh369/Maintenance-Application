@@ -832,9 +832,9 @@ public class psr_eldis_4_rl200_daily extends AppCompatActivity {
         titlePaint.setTextSize(13);*/
 
 
-        int[] editTextXPixel10 = {};
+        int[] editTextXPixel10 = {336,336,336,336,336,336,336,336,336};
 
-        int[] editTextYPixel10 = {};
+        int[] editTextYPixel10 = {270,351,441,553,605,650,750,799,840};
 
 
         // Change till here as per requirements ----------------------------------------------------
@@ -847,9 +847,6 @@ public class psr_eldis_4_rl200_daily extends AppCompatActivity {
 
 
 
-
-
-
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
@@ -859,8 +856,249 @@ public class psr_eldis_4_rl200_daily extends AppCompatActivity {
         myPdfdocument.finishPage(myPage10);
 
 
-        //---------------------End of Page 10? ---------------
+        //---------------------End of Page 10 ---------------
+        // ******************Code for Page 11****************
+        // create a page description
+        PdfDocument.PageInfo myPageInfo11 = new PdfDocument.PageInfo.Builder(723, 1023,11 ).create();
+        // initialising canvas & bitmap and start of page
+        PdfDocument.Page myPage11 = myPdfdocument.startPage(myPageInfo11);
+        canvas = myPage11.getCanvas();
 
+        //-------------------------change here and put correct image name as per drawable--------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.eldis4psrdailypage11);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
+        //--------------------------------------------------------------------------------------------
+
+
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+
+        titlePaint.setTextSize(13);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+        /*canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 373, 658, paint);  //  For signature printing used in the last page usually
+        titlePaint.setTextSize(13);*/
+
+
+        int[] editTextXPixel11 = {336,336,336,336,336,336,336,336,336};
+
+        int[] editTextYPixel11 = {276,360,436,524,577,623,715,753,811};
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
+
+        for(int i = 0; i < editTextXPixel11.length; i++){
+            canvas.drawText( editTextDataForPDF[i+ editTextXPixel1.length + editTextXPixel2.length+editTextXPixel3.length+editTextXPixel4.length+editTextXPixel5.length+editTextXPixel6.length+editTextXPixel7.length+editTextXPixel8.length+editTextXPixel9.length+editTextXPixel10.length],editTextXPixel11[i],editTextYPixel11[i],titlePaint);
+        }
+
+
+
+        // Fixed till here--------------------------------------------------------------------------
+
+        // Change as per your requirement-----------------------------------------------------------
+        titlePaint.setTextSize(13);
+
+
+        myPdfdocument.finishPage(myPage11);
+
+
+        //---------------------End of Page 11 ---------------
+
+        // ******************Code for Page 12****************
+        // create a page description
+        PdfDocument.PageInfo myPageInfo12 = new PdfDocument.PageInfo.Builder(723, 1023,12 ).create();
+        // initialising canvas & bitmap and start of page
+        PdfDocument.Page myPage12 = myPdfdocument.startPage(myPageInfo12);
+        canvas = myPage12.getCanvas();
+
+        //-------------------------change here and put correct image name as per drawable--------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.eldis4psrdailypage12);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
+        //--------------------------------------------------------------------------------------------
+
+
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+
+        titlePaint.setTextSize(13);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+        /*canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 373, 658, paint);  //  For signature printing used in the last page usually
+        titlePaint.setTextSize(13);*/
+
+
+        int[] editTextXPixel12 = {331,331,331,331,331,331,331,331,331,331,331};
+
+        int[] editTextYPixel12 = {212,312,358,404,447,494,538,638,697,764,831};
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
+
+        for(int i = 0; i < editTextXPixel12.length; i++){
+            canvas.drawText( editTextDataForPDF[i+ editTextXPixel1.length + editTextXPixel2.length+editTextXPixel3.length+editTextXPixel4.length+editTextXPixel5.length+editTextXPixel6.length+editTextXPixel7.length+editTextXPixel8.length+editTextXPixel9.length+editTextXPixel10.length+editTextXPixel11.length],editTextXPixel12[i],editTextYPixel12[i],titlePaint);
+        }
+
+
+
+        // Fixed till here--------------------------------------------------------------------------
+
+        // Change as per your requirement-----------------------------------------------------------
+        titlePaint.setTextSize(13);
+
+
+        myPdfdocument.finishPage(myPage12);
+
+
+        //---------------------End of Page 12 ---------------
+
+
+        // ******************Code for Page 13****************
+        // create a page description
+        PdfDocument.PageInfo myPageInfo13 = new PdfDocument.PageInfo.Builder(723, 1023,13 ).create();
+        // initialising canvas & bitmap and start of page
+        PdfDocument.Page myPage13 = myPdfdocument.startPage(myPageInfo13);
+        canvas = myPage13.getCanvas();
+
+        //-------------------------change here and put correct image name as per drawable--------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.eldis4psrdailypage13);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
+        //--------------------------------------------------------------------------------------------
+
+
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+
+        titlePaint.setTextSize(13);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+        /*canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 373, 658, paint);  //  For signature printing used in the last page usually
+        titlePaint.setTextSize(13);*/
+
+
+        int[] editTextXPixel13 = {337,337,337,337,337,337,337,337,337,337,337,337};
+
+        int[] editTextYPixel13 = {246,292,336,381,424,518,562,606,650,695,785,832};
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
+
+        for(int i = 0; i < editTextXPixel13.length; i++){
+            canvas.drawText( editTextDataForPDF[i+ editTextXPixel1.length + editTextXPixel2.length+editTextXPixel3.length+editTextXPixel4.length+editTextXPixel5.length+editTextXPixel6.length+editTextXPixel7.length+editTextXPixel8.length+editTextXPixel9.length+editTextXPixel10.length+editTextXPixel11.length+editTextXPixel12.length],editTextXPixel13[i],editTextYPixel13[i],titlePaint);
+        }
+
+
+
+        // Fixed till here--------------------------------------------------------------------------
+
+        // Change as per your requirement-----------------------------------------------------------
+        titlePaint.setTextSize(13);
+
+
+        myPdfdocument.finishPage(myPage13);
+
+
+        //---------------------End of Page 13 ---------------
+
+        // ******************Code for Page 14****************
+        // create a page description
+        PdfDocument.PageInfo myPageInfo14 = new PdfDocument.PageInfo.Builder(723, 1023,14 ).create();
+        // initialising canvas & bitmap and start of page
+        PdfDocument.Page myPage14 = myPdfdocument.startPage(myPageInfo14);
+        canvas = myPage14.getCanvas();
+
+        //-------------------------change here and put correct image name as per drawable--------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.eldis4psrdailypage14);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
+        //--------------------------------------------------------------------------------------------
+
+
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+
+        titlePaint.setTextSize(13);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 292, 776, paint);  //  For signature printing used in the last page usually
+        titlePaint.setTextSize(13);
+
+
+        int[] editTextXPixel14 = {330,330,330,330,330,330,330,330,330,330};
+
+        int[] editTextYPixel14 = {193,238,330,374,470,515,560,626,656,680};
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
+
+        for(int i = 0; i < editTextXPixel14.length; i++){
+            canvas.drawText( editTextDataForPDF[i+ editTextXPixel1.length + editTextXPixel2.length+editTextXPixel3.length+editTextXPixel4.length+editTextXPixel5.length+editTextXPixel6.length+editTextXPixel7.length+editTextXPixel8.length+editTextXPixel9.length+editTextXPixel10.length+editTextXPixel11.length+editTextXPixel12.length+editTextXPixel13.length],editTextXPixel14[i],editTextYPixel14[i],titlePaint);
+        }
+
+
+
+        // Fixed till here--------------------------------------------------------------------------
+
+        // Change as per your requirement-----------------------------------------------------------
+        titlePaint.setTextSize(13);
+
+
+        myPdfdocument.finishPage(myPage14);
+
+
+        //---------------------End of Page 14 ---------------
+
+        // ******************Code for Page 15****************
+        // create a page description
+        PdfDocument.PageInfo myPageInfo15 = new PdfDocument.PageInfo.Builder(723, 1023,15 ).create();
+        // initialising canvas & bitmap and start of page
+        PdfDocument.Page myPage15 = myPdfdocument.startPage(myPageInfo15);
+        canvas = myPage15.getCanvas();
+
+        //-------------------------change here and put correct image name as per drawable--------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.eldis4psrdailypage15);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
+        //--------------------------------------------------------------------------------------------
+
+
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+
+        titlePaint.setTextSize(13);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+
+
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
+        canvas.drawText( editTextDataForPDF[ editTextXPixel1.length + editTextXPixel2.length+editTextXPixel3.length+editTextXPixel4.length+editTextXPixel5.length+editTextXPixel6.length+editTextXPixel7.length+editTextXPixel8.length+editTextXPixel9.length+editTextXPixel10.length+editTextXPixel11.length+editTextXPixel12.length+editTextXPixel13.length+editTextXPixel14.length],158,253,titlePaint);
+
+
+
+        // Fixed till here--------------------------------------------------------------------------
+
+        // Change as per your requirement-----------------------------------------------------------
+        titlePaint.setTextSize(13);
+
+
+        myPdfdocument.finishPage(myPage15);
+
+
+        //---------------------End of Page 15 ---------------
         // ******************after writing all pages****************
 
         ActivityCompat.requestPermissions(this, new String[]{
@@ -875,7 +1113,7 @@ public class psr_eldis_4_rl200_daily extends AppCompatActivity {
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "Daily_PSR_Selex_ATCR33S " + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "Daily_PSR_ELDIS4_RL-200 " + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -897,7 +1135,7 @@ public class psr_eldis_4_rl200_daily extends AppCompatActivity {
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Daily Maintenance of SELEX ATCR33S DPC PSR done.",//Change Here-----------------------------
+                "Daily Maintenance of ELDIS4 RL-2000 PSR done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
         //---------------------------------------------------------------------------------------------------------
 
