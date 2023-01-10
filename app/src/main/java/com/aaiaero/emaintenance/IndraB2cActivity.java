@@ -40,15 +40,15 @@ public class IndraB2cActivity extends AppCompatActivity {
     public void dailyClicked (View view){
         // Launch the VHF Equipment Room Activity
 
-        //Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
-        // startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),AutomationIndraB2cDaily.class);
+        startActivity(intent);
 
 
     }
 
     public void ups15kvaClicked (View view){
         // Launch the DVR Equipment Room Activity
-        Intent intent = new Intent(getApplicationContext(),AmssEcilWeeklyActivity.class);
+        Intent intent = new Intent(getApplicationContext(),AutomationIndraB2cUPS15KVA.class);
         startActivity(intent);
 
 

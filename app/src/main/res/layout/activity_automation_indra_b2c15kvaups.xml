@@ -346,7 +346,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="<25\u00BA Celcius"/>
+                    android:hint="&lt;25\u00BA Celcius"/>
 
             </LinearLayout>
 
@@ -484,7 +484,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -595,7 +595,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -844,7 +844,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -955,7 +955,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -1204,7 +1204,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -1315,7 +1315,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -1564,7 +1564,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 
@@ -1675,7 +1675,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="< 40 Amps"/>
+                    android:hint="&lt; 40 Amps"/>
 
             </LinearLayout>
 

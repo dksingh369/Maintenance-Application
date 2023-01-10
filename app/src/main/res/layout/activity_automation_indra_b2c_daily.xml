@@ -1674,7 +1674,7 @@
                     android:layout_height="48dp"
                     android:layout_weight=".45"
                     android:ems="10"
-                    android:hint="<25\u00BA Celcius"
+                    android:hint="&lt; 25\u00BA Celcius"
                     android:inputType="text"
                     android:textSize="14sp" />
 
@@ -1803,7 +1803,7 @@
                     android:layout_weight=".45"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:hint="<25\u00BA Celcius"/>
+                    android:hint="&lt;25\u00BA Celcius"/>
 
             </LinearLayout>
 

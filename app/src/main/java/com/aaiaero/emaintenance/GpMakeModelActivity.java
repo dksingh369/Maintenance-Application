@@ -14,19 +14,20 @@ public class GpMakeModelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gp_make_model);
 
-        Button normarc70, normarc35, asii, thales;
+        Button normarc70, normarc35, asii, thales, indra70;
 
         normarc70 = (Button) findViewById(R.id.normarc70);
         normarc35 = (Button) findViewById(R.id.normarc35);
         asii = (Button) findViewById(R.id.asii);
         thales = (Button) findViewById(R.id.thales);
+        indra70 = (Button) findViewById(R.id.indra70);
 
         normarc70.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), NavigationLlzNormarc7000Activity.class);
-                startActivity(intent);
+               // Intent intent = new Intent(getApplicationContext(), NavigationLlzNormarc7000Activity.class);
+                // startActivity(intent);
             }
         });
 
@@ -50,6 +51,15 @@ public class GpMakeModelActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), NavigationGpThales420Activity.class);
+                startActivity(intent);
+
+            }
+        });
+        indra70.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), NavigationGpIndra70Activity.class);
                 startActivity(intent);
 
             }

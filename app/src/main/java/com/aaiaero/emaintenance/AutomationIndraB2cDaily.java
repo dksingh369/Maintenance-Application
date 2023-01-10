@@ -415,8 +415,7 @@ public class AutomationIndraB2cDaily extends AppCompatActivity {
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
-        paint.setTextAlign(Paint.Align.LEFT);
+
 
         titlePaint.setTextSize(30);
 
@@ -427,6 +426,8 @@ public class AutomationIndraB2cDaily extends AppCompatActivity {
             canvas.drawText( editTextDataForPDF[i+editTextXPixel1.length+editTextXPixel2.length+editTextXPixel3.length],editTextXPixel4[i],editTextYPixel4[i],titlePaint);
         }
 
+        titlePaint.setTextSize(30);
+        paint.setTextAlign(Paint.Align.LEFT);
         //canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.photo, 210, 270, false), 93, 480, paint);
         canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature, 290, 270, false), 33, 690, paint);
         myPdfdocument.finishPage(myPage4);
@@ -460,7 +461,7 @@ public class AutomationIndraB2cDaily extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"Automation_Indra_B2c","Daily",outputEditText,MyFunctions.specificCode("d"),"outputSwitch", "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"Automation_Indra_B2c","Daily",outputEditText,MyFunctions.specificCode("d"),"outputSwitch", outputSpinner);// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)

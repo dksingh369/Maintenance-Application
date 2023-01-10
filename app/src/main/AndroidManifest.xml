@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.aaiaero.emaintenance">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,147 +25,96 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
         <activity
-            android:name=".DMESELEX1118AAND1119A"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDMESELEX1118Aand1119ADailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VHFDVRRETIADailyRecordingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORSELEX1150HalfYearlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORSELEX1150YearlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORSELEX1150QuarterlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORSELEX1150WeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DVORTHALESMONTHLY"
-            android:exported="false" />
-        <activity
-            android:name=".DVORSELEX1150"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORSELEX1150DailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORThales432AnnualActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORThales432MonthlyAnnex1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORThales432WeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORASII1150DailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VHFDVRRETIADailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DVRRetia"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORGcel755MonthlyGroundChecksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORThales432MonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavAidsDVORThales432SixMonthlyActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".AutomationDrfNeptunoRecordingCheck"
-            android:exported="false"/>
-        <activity
-            android:name=".AutomationUPS5kvaDailyActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".AutomationIndraB2cQuarterlyActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".AutomationIndraB2cMonthlyActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".IndraB2cActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AutomationActivity"
-            android:exported="false" />
-        </activity>
-            android:name=".AutomationIndraB2cDaily"
-            android:exported="false" />
-         <activity
             android:name=".DatisAcamsDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AutomationIndraB2cUPS15KVA"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".VccsDrakeWeeklyActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".DatisAcamsActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".DatisMakeActivity"
-            android:exported="false"/>
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".VccsDrakeActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".VccsDrakeDailyActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".DatisAcamsMonthlyActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".DMEASII1118AND1119"
             android:exported="false" />
         <activity
             android:name=".DVORTHALES432"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".DVORASII1150SixMonthly"
             android:exported="false" />
         <activity
             android:name=".NavAidsDVORThales432QuarterlyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDVORThales432DailyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDMEASII1118and1119QuarterlyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDMEASII1118and1119MonthlyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDMEASII1118and1119WeeklyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDMEASII1118and1119DailyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDVORASII1150SixMonthlyVSWRActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NavAidsDVORASII1150SixMonthlyActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NDBSAC100"
             android:exported="false" />
         <activity
             android:name=".DVORASII1150"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LlzIndra70MonthlyActivity"
             android:exported="false" />
@@ -249,9 +199,7 @@
         <activity
             android:name=".SignupActivity"
             android:exported="false" />
-        <activity
-            android:name=".DvorGcel755Activity"
-            android:exported="false" />
+
         <activity
             android:name=".DmeThalesActivity"
             android:exported="false" />
@@ -495,6 +443,89 @@
         <activity
             android:name=".ADSBActivity"
             android:exported="false" />
+        <activity
+            android:name=".DMESELEX1118AAND1119A"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDMESELEX1118Aand1119ADailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VHFDVRRETIADailyRecordingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORSELEX1150HalfYearlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORSELEX1150YearlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORSELEX1150QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORSELEX1150WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DVORTHALESMONTHLY"
+            android:exported="false" />
+        <activity
+            android:name=".DVORSELEX1150"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORSELEX1150DailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORThales432AnnualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORThales432MonthlyAnnex1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORThales432WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORASII1150DailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VHFDVRRETIADailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DVRRetia"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORGcel755MonthlyGroundChecksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORThales432MonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsDVORThales432SixMonthlyActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AutomationDrfNeptunoRecordingCheck"
+            android:exported="false"/>
+        <activity
+            android:name=".AutomationUPS5kvaDailyActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AutomationIndraB2cQuarterlyActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AutomationIndraB2cMonthlyActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".IndraB2cActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AutomationActivity"
+            android:exported="false" />
+    <activity
+    android:name=".AutomationIndraB2cDaily"
+    android:exported="false" />
+
+    <activity
+        android:name=".AutomationIndraB2cUPS15KVA"
+        android:exported="false" />
+
         <activity
             android:name=".ERActivity"
             android:exported="false" />

@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Select INDRA 70 Schedule to perform Maintenance."
+        android:text="Select INDRA 7000 Schedule to perform Maintenance."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
